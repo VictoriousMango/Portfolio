@@ -1,3 +1,3 @@
 # Porfolio
 
-Link for Potfolio : https://victoriousmango.github.io/Porfolio/
+Link for Potfolio : https://victoriousmango.github.io/Portfolio/
