@@ -140,32 +140,42 @@
         .text-gray {
             color: grey;
         }
-        footer{
+
+        footer {
             background-color: rgba(0, 0, 0, 0.432);
             height: 233px;
             opacity: 1;
         }
-        .footer{
+
+        .footer {
             display: flex;
             padding: 23px 122px;
             justify-content: space-evenly;
         }
-        .footer > div {
+
+        .footer>div {
             width: auto;
         }
-        .about{
+
+        .about {
             position: relative;
             color: gray;
             width: 150px;
             font-size: 12px;
         }
+
         #element {
             color: aquamarine;
         }
     </style>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -174,17 +184,18 @@
             <div class="left">Additya's Portfolie</div>
             <div class="right">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#contact">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="firstSection" id="home">
+        <section class="firstSection">
             <div class="leftSection">
                 Hi, I am <span class="purple">Additya</span>
                 <div>and I am a</div>
@@ -193,29 +204,37 @@
             <div class="rightSection"><img src="Web Dev.webp" alt=""></div>
         </section>
         <hr>
-        <section class="secondSection" id="projects">
+        <section class="secondSection">
             <span class="text-gray">What I have Done so Far</span>
             <h1>Work Experience</h1>
             <div class="box">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="Github.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">GitHub</h5>
-                          <p class="card-text">To view my projects and their respective demonstrations. Kindly Got to my Github Page</p>
-                          <a target = "_blank" href="https://github.com/VictoriousMango" class="btn btn-outline-info">Go somewhere</a>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="Github.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">GitHub</h5>
+                                <p class="card-text">To view my projects and their respective demonstrations. Kindly Got
+                                    to my Github Page</p>
+                                <a href="https://github.com/VictoriousMango" class="btn btn-outline-info">Go
+                                    somewhere</a>
+                            </div>
                         </div>
                     </div>
-                    
+
                     <div class="card mr-3" style="width: 18rem;">
-                        <img src="LinkedIn.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">LinkedIn</h5>
-                          <p class="card-text">To view my achievements and certifications. Kindly Got to my LinkedIn Profile</p>
-                          <a target = "_blank" href="https://www.linkedin.com/in/additya-akash-mishra-0abba7185/" class="btn btn-outline-info">Go somewhere</a>
+                        <div class="col">
+                            <img src="Github.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">LinkedIn</h5>
+                                <p class="card-text">To view my achievements and certifications. Kindly Got to my
+                                    LinkedIn Profile</p>
+                                <a href="https://github.com/VictoriousMango" class="btn btn-outline-info">Go
+                                    somewhere</a>
+                            </div>
                         </div>
                     </div>
-                    </div>
+                </div>
             </div>
 
 
@@ -223,15 +242,15 @@
 
     <footer>
         <div class="footer">
-            
+
             <div class="footer-first">
                 Portfolio of Additya Akash Mishra
-                
+
             </div>
-            <div class="footer-second" id="contact">
+            <div class="footer-second">
                 Contact list
                 <ul>
-                    <li>Email: Additya.mishra20@st.niituniversity.in</li>
+                    <li>Email</li>
                     <li>Github</li>
                     <li>LinkedIn</li>
                 </ul>
@@ -239,7 +258,9 @@
             <div class="footer-third">
                 About
                 <div class="about">
-                    I am Additya Akash Mishra, Doing My BTech from NIIT University. Being an Enthusiastic Learner, I also have diverse skill set and knowledge, to be able to provide more and exceed expectations.     
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem voluptate numquam optio repellat
+                    autem omnis officiis adipisci praesentium? Nemo eligendi mollitia a voluptatum vitae maiores
+                    aspernatur quaerat aut ut quasi?
                 </div>
             </div>
             <div class="footer-fourth"></div>
