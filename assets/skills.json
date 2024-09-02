@@ -1,0 +1,51 @@
+{
+    "Back-End" : [
+        "Flask",
+        "Django",
+        "Node",
+        "Express",
+        "Spring-Boot"
+    ], 
+    "Database" : [
+        "MySQL",
+        "SQLite",
+        "MongoDB",
+        "Deta",
+        "DynamoDB"
+    ], 
+    "Front-End" : [
+        "React",
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Bootstrap",
+        "Jinja Template Engine"
+    ],  
+    "Cloud-Service" : {
+        "AWS" : [
+            "S3",
+            "DynamoDB",
+            "CloudWatch",
+            "CloudFront"
+        ],
+        "Google Cloud" : [
+            "Google Earth Engine",
+            "Google Collab"
+        ],
+        "Terraform" : 3
+    },
+    "Machine Learning Algorithms" : [
+        "Linear Regression",
+        "Logistic Regression",
+        "Decision Trees",
+        "SVM",
+        "Naive Bayes",
+        "KNN",
+        "K-Means",
+        "Random Forest",
+        "Dimensionality Reduction",
+        "Gradient Boosting",
+        "XGBoost",
+        "AdaBoosting"
+    ]
+}

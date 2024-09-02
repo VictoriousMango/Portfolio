@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additya - Developer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="..\assets\CSS\project.css">
+</head>
+
+<body>
+    <nav class="navbar sticky-top bg-body-tertiary navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" onclick="Toggling()">Additya's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=".\about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i><u>Project</u></i></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Contact
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Gmail</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://www.linkedin.com/in/additya-akash-mishra-0abba7185/">LinkedIn</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="skills">
+            <div class="row">
+                <div class="col">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h2>Back-End</h2>
+                            </div>
+                            <div class="flip-card-back">
+                                <ul>
+                                    <li>Flask</li>
+                                    <li>Django</li>
+                                    <li>Node</li>
+                                    <li>Express</li>
+                                    <li>Spring-Boot</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h2>Database</h2>
+                            </div>
+                            <div class="flip-card-back">
+                                <ul>
+                                    <li>MySQL</li>
+                                    <li>SQLite</li>
+                                    <li>MongoDB</li>
+                                    <li>Deta</li>
+                                    <li>DynamoDB</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h2>Front-End</h2>
+                            </div>
+                            <div class="flip-card-back">
+                                <ul>
+                                    <li>React</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                    <li>Bootstrap</li>
+                                    <li>Jinja Template Engine</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h2>Cloud-Services</h2>
+                            </div>
+                            <div class="flip-card-back">
+                                <ul>
+                                    <li>
+                                        <a class="btn btn-outline-info" data-bs-toggle="collapse" href="#aws"
+                                            role="button" aria-expanded="false" aria-controls="aws">
+                                            AWS
+                                        </a>
+                                    </li>
+                                    <li style="padding-top: 5px;">
+                                        <a class="btn btn-outline-info" data-bs-toggle="collapse" href="#gcp"
+                                            role="button" aria-expanded="false" aria-controls="gcp">
+                                            Google
+                                        </a>
+                                    </li>
+                                    <li style="padding-top: 5px;">
+                                        <a class="btn btn-outline-info" data-bs-toggle="collapse" href="#terraform"
+                                            role="button" aria-expanded="false" aria-controls="terraform">
+                                            Terraform
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="collapse" id="aws">
+                                    <div class="card card-body">
+                                        <ul>
+                                            <li>S3</li>
+                                            <li>DynamoDB</li>
+                                            <li>CloudWatch</li>
+                                            <li>CloudFront</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="gcp">
+                                    <div class="card card-body">
+                                        <ul>
+                                            <li>Google Earth Engine</li>
+                                            <li>Google Collab</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h2>Machine Learning</h2>
+                            </div>
+                            <div class="flip-card-back">
+                                <ul>
+                                    <li>Linear Regression</li>
+                                    <li>Logistic Regression</li>
+                                    <li>SVM</li>
+                                    <li>Random Forest</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Javascript -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="..\assets\javascript\project.js"></script>
+    <script>
+        function Toggling() {
+            console.log("Clicked the toggle button")
+            console.log()
+            var element = document.body;
+            element.dataset.bsTheme = element.dataset.bsTheme == "dark" ? "light" : "dark"
+        }
+    </script>
+</body>
+
+</html>
