@@ -1,0 +1,37 @@
+/* Body */
+body {
+    /* background-color: rgb(0, 0, 33); */
+    font-family: 'Poppins', sans-serif;
+}
+
+ /* Fix the position of the sidebar with the list items */
+ .list-group {
+    position: sticky;
+    top: 20px;
+}
+
+/* Ensure the scrollable content has a height that allows scrolling */
+.scrollspy-example-1 {
+    height: 25vh;
+    overflow-y: scroll;
+    border: 1px solid aquamarine; /* Example border color: Bootstrap primary color */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+    padding: 10px; /*Optional: Adds padding inside the border*/
+}
+
+/* Ensure the scrollable content has a height that allows scrolling */
+.scrollspy-example-2 {
+    height: 75vh;
+    overflow-y: scroll;
+    border: 1px solid aquamarine; /* Example border color: Bootstrap primary color */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+    padding: 10px; /*Optional: Adds padding inside the border*/
+}
+
+main {
+    padding-top: 25px;
+}
+
+.skills {
+    padding-top: 25px;
+}
