@@ -12,12 +12,13 @@ body {
 
 /* Ensure the scrollable content has a height that allows scrolling */
 .scrollspy-example-1 {
-    height: 25vh;
+    height: 30vh;
     overflow-y: scroll;
     border: 1px solid aquamarine; /* Example border color: Bootstrap primary color */
     border-radius: 5px; /* Optional: Adds rounded corners */
     padding: 10px; /*Optional: Adds padding inside the border*/
 }
+
 
 /* Ensure the scrollable content has a height that allows scrolling */
 .scrollspy-example-2 {
@@ -34,4 +35,28 @@ main {
 
 .skills {
     padding-top: 25px;
+}
+
+/* /Hovering action */
+/* Hide the tooltip content by default */
+.tooltip-content {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 8px;
+    border-radius: 4px;
+    top: 40px; /* Adjust based on button position */
+    left: 0;
+    z-index: 10;
+}
+
+/* Position the button relatively so that the tooltip appears near it */
+.btn-with-tooltip {
+    position: relative;
+}
+
+/* Show the tooltip when hovering over the button */
+.btn-with-tooltip:hover + .tooltip-content {
+    visibility: visible;
+    opacity: 1;
 }

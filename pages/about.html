@@ -39,13 +39,17 @@
                         <a class="nav-link" href="./project.html">Project</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Contact
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Gmail</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="https://www.linkedin.com/in/additya-akash-mishra-0abba7185/">LinkedIn</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://www.linkedin.com/in/additya-akash-mishra-0abba7185/">LinkedIn</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -56,33 +60,45 @@
         <div class="row">
             <div class="col-4">
                 <div id="list-example" class="list-group">
-                    <a class="list-group-item list-group-item-action" href="#item-1">Freelance Project</a>
-                    <a class="list-group-item list-group-item-action" href="#item-2">Research Project</a>
+                    <a class="list-group-item list-group-item-action" href="#item-1">Mapathon Project</a>
+                    <a class="list-group-item list-group-item-action" href="#item-2">Freelance Project</a>
+                    <a class="list-group-item list-group-item-action" href="#item-3">Research Project</a>
                 </div>
                 <div class="skills">
                     <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
-                    class="scrollspy-example-1" tabindex="0">
-                    <div id="skill-1">
-                        <h2>Freelance Project skills</h2>
-                        <ul>
-                            <li>Python</li>
-                            <li>Bootstrap</li>
-                            <li>Jinja Template Engine</li>
-                            <li>Flask SQL Alchemy</li>
-                            <li>SQLlite Database</li>
-                        </ul>
+                        class="scrollspy-example-1" tabindex="0">
+                        <div id="skill-1">
+                            <h2>Mapathon Project skills</h2>
+                            <ul>
+                                <li>Geospatial Data Analysis</li>
+                                <li>QGIS Software</li>
+                                <li>Data Acquisition and Processing</li>
+                                <li>Data Categorization and classification</li>
+                                <li>Cartography</li>
+                                <li>Data Visualization</li>
+                            </ul>
+                        </div>
+                        <div id="skill-2">
+                            <h2>Freelance Project skills</h2>
+                            <ul>
+                                <li>Python</li>
+                                <li>Bootstrap</li>
+                                <li>Jinja Template Engine</li>
+                                <li>Flask SQL Alchemy</li>
+                                <li>SQLlite Database</li>
+                            </ul>
+                        </div>
+                        <div id="skill-3">
+                            <h2>Research Project skills</h2>
+                            <ul>
+                                <li>Spatial Mapping</li>
+                                <li>Google Earth Engine</li>
+                                <li>Python</li>
+                                <li>Statistical Analysis</li>
+                                <li>Machine Learning</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div id="skill-2">
-                        <h2>Research Project skills</h2>
-                        <ul>
-                            <li>Spatial Mapping</li>
-                            <li>Google Earth Engine</li>
-                            <li>Python</li>
-                            <li>Statistical Analysis</li>
-                            <li>Machine Learning</li>
-                        </ul>
-                    </div>
-                </div>
                 </div>
             </div>
 
@@ -90,6 +106,45 @@
                 <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
                     class="scrollspy-example-2" tabindex="0">
                     <div id="item-1">
+                        <h4><u><i>Mapathon Project</i></u></h4>
+                        <br>
+                        <h3>Electric Vehicle Adoption Map | QGIS, Data Acquisition, GIS Analysis</h3>
+                        <br>
+                        <p>
+                            As part of the IIT Bombay FOSSEE Mapathon, I created an insightful map that showcases India's
+                            efforts to promote electric vehicle adoption. This project integrated reliable data sources
+                            such as:
+                            <br>
+                        <ul>
+                            <li><b>Data from the Ministry of Heavy Industries:</b> Acquired from official government
+                                releases and processed into structured Excel sheets for further analysis.
+                            </li>
+                            <li>
+                                <b>State Boundaries from Bhuvan:</b> Leveraged official boundary data to ensure
+                                geographical accuracy.
+                            </li>
+                        </ul>
+                        <br>
+                        Using QGIS, I developed four maps that help users:
+                        <ul>
+                            <li>Identify the best states for purchasing electric vehicles.</li>
+                            <li>Determine optimal inter-state travel routes based on charger density.</li>
+                            <li>Analyze the ongoing shift in the Indian automobile industry towards electric vehicles.
+                            </li>
+                        </ul>
+                        This project enhances decision-making in electric vehicle adoption by providing practical
+                        insights through comprehensive spatial data.
+                        </p>
+                        <div class="container-fluid">
+                            <a class="btn btn-outline-info" href="#skill-1">Skills</a>
+                            <a class="btn btn-outline-info"
+                                href="https://www.linkedin.com/posts/thota-sivasankar-11197861_niit-gismapping-geospatial-activity-7074433395044286465-HHuj?utm_source=share&utm_medium=member_desktop">
+                                Linked Post
+                            </a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="item-2">
                         <h4><u><i>Freelance Project</i></u></h4>
                         <br>
                         <h3>Efficient Billing Management System for a Law Firm | Flask, SQLite, Python</h3>
@@ -127,46 +182,70 @@
                         saving valuable time and resources.
                         </p>
                         <div class="container-fluid">
-                            <a class="btn btn-outline-info" href="#skill-1">Skills</a>
-                            <a class="btn btn-outline-info" href="#">Project Details</a>
+                            <a class="btn btn-outline-info" href="#skill-2">Skills</a>
+                            <a class="btn btn-outline-info" href="https://drive.google.com/file/d/1MU1NDoPiIjWnPjKjAGFT0vz2d2W-IWZv/view?usp=sharing">
+                                Letter of Recommendation
+                            </a>
                         </div>
                     </div>
                     <hr>
-                    <div id="item-2">
+                    <div id="item-3">
                         <h4><u><i>Research Project</i></u></h4>
                         <br>
-                        <h3>Landslide Susceptibility Mapping Algorithm | Google Earth Engine, Machine Learning, Python</h3>
+                        <h3>Landslide Susceptibility Mapping Algorithm | Google Earth Engine, Machine Learning, Python
+                        </h3>
                         <br>
                         <p>
                             I developed an advanced Landslide Susceptibility Mapping algorithm designed to minimize
-                            creator subjectivity, providing more accurate and reliable susceptible area identification. The project
+                            creator subjectivity, providing more accurate and reliable susceptible area identification.
+                            The project
                             integrated multiple cutting-edge technologies and methodologies:
                             <br>
-                            <ul>
-                                <li>
-                                    <b>Google Earth Engine:</b> Utilized for efficient storage and management of extensive geospatial
-                                    datasets.
-                                </li>
-                                <li>
-                                    <b>Hypothesis Testing:</b> Applied during the data pre-processing phase to ensure statistical
-                                    robustness.
-                                </li>
-                                <li>
-                                    <b>Machine Learning (Python):</b> Implemented to analyze data and predict landslide susceptibility
-                                    with high precision.
-                                </li>
-                                <li>
-                                    <b>Map Creation:</b> Generated detailed susceptibility maps using Google Earth Engine, based on the
-                                    refined data and machine learning results.
-                                </li>
-                            </ul>                  
-                            This research was recognized and presented at the National Conference of Machine Learning
-                            and Artificial Intelligence in October 2023, underscoring its significance and impact in the
-                            field.
+                        <ul>
+                            <li>
+                                <b>Google Earth Engine:</b> Utilized for efficient storage and management of extensive
+                                geospatial
+                                datasets.
+                            </li>
+                            <li>
+                                <b>Hypothesis Testing:</b> Applied during the data pre-processing phase to ensure
+                                statistical
+                                robustness.
+                            </li>
+                            <li>
+                                <b>Machine Learning (Python):</b> Implemented to analyze data and predict landslide
+                                susceptibility
+                                with high precision.
+                            </li>
+                            <li>
+                                <b>Map Creation:</b> Generated detailed susceptibility maps using Google Earth Engine,
+                                based on the
+                                refined data and machine learning results.
+                            </li>
+                        </ul>
+                        This research was recognized and presented at the National Conference of Machine Learning
+                        and Artificial Intelligence in October 2023, underscoring its significance and impact in the
+                        field.
                         </p>
                         <div class="container-fluid">
-                            <a class="btn btn-outline-info" href="#skill-2">Skills</a>
-                            <a class="btn btn-outline-info" href="#">Project Details</a>
+                            <a class="btn btn-outline-info" href="#skill-3">Skills</a>
+                            <a class="btn-with-tooltip" href="https://dcal.iimb.ac.in/NCMLAI-Trivandrum2023/pdf/Book%20of%20Abstracts.pdf">
+                                <button class="btn btn-outline-info">
+                                    <b>NCMLAI:</b> <i><u>Book of Abstracts</u></i>
+                                </button>
+                            </a>
+                            <div class="tooltip-content">
+                                <ul>
+                                    <li>
+                                        <b>NCMLAI:</b> National Conference of Machine Learning and Artificial Intelligence 2023
+                                    </li>
+                                    <li>
+                                        <b>Book of Abstracts:</b> <i>Page Number 61</i>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            
                         </div>
                     </div>
                     <hr>

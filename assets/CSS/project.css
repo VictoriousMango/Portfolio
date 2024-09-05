@@ -6,8 +6,10 @@
 
 /* Flip Card Effect */
 .flip-card {
+    padding-top: 10px;
     background-color: transparent;
     width: 250px;
+    height: 175px;
     border: 1px solid;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
@@ -45,7 +47,7 @@
   /* Style the back side */
   .flip-card-back {
     height:max-content;
-    padding-top: 10px;
+    padding-top: 5px;
     /* background-color: rgba(7, 23, 40, 0.838); */
     /* color: white; */
     transform: rotateY(180deg);
