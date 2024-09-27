@@ -10,7 +10,7 @@
     background-color: transparent;
     width: 250px;
     height: 175px;
-    border: 1px solid;
+    /* border: 1px solid; */
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
   
@@ -36,6 +36,7 @@
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
+    /* align-content: center; */
   }
   
   /* Style the front side (fallback if image is missing) */
@@ -52,3 +53,4 @@
     /* color: white; */
     transform: rotateY(180deg);
   }
+
