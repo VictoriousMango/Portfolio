@@ -57,160 +57,9 @@
 
     <main>
         <div class="skills">
-            <div class="Row">
-                <div class="col">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <h2><u>Back-End</u></h2>
-                                <ul>
-                                    <div id="BackEndShowSkill"></div>
-                                </ul>
-                            </div>
-                            <div class="flip-card-back">
-                                <ul>
-                                    <li>Flask</li>
-                                    <li>Django</li>
-                                    <li>Node</li>
-                                    <li>Express</li>
-                                    <li>Spring-Boot</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <h2><u>Database</u></h2>
-                                <ul>
-                                    <div id="DataBaseShowSkill"></div>
-                                </ul>
-                            </div>
-                            <div class="flip-card-back">
-                                <ul>
-                                    <li>MySQL</li>
-                                    <li>SQLite</li>
-                                    <li>MongoDB</li>
-                                    <li>Deta</li>
-                                    <li>DynamoDB</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <h2><u>Front-End</u></h2>
-                                <ul>
-                                    <div id="FrontEndShowSkill"></div>
-                                </ul>
-                            </div>
-                            <div class="flip-card-back">
-                                <ul>
-                                    <li>React</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                    <li>Bootstrap</li>
-                                    <li>Jinja Template Engine</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <h2><u>FrameWorks</u></h2>
-                                <ul>
-                                    <div id="FrameWorksShowSkill"></div>
-                                </ul>
-                            </div>
-                            <div class="flip-card-back">
-                                <ul>
-                                    <li>Flask</li>
-                                    <li>Express</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <h2><u>Machine Learning</u></h2>
-                                <ul>
-                                    <div id="MachineLearningShowSkill"></div>
-                                </ul>
-                            </div>
-                            <div class="flip-card-back">
-                                <ul>
-                                    <li>Linear Regression</li>
-                                    <li>Logistic Regression</li>
-                                    <li>SVM</li>
-                                    <li>Random Forest</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <h2><u>Cloud-Services</u></h2>
-                                <ul>
-                                    <div id="CloudServicesShowSkill"></div>
-                                </ul>
-                            </div>
-                            <div class="flip-card-back">
-                                <ul>
-                                    <li>
-                                        <a class="btn btn-outline-info" data-bs-toggle="collapse" href="#aws"
-                                            role="button" aria-expanded="false" aria-controls="aws">
-                                            AWS
-                                        </a>
-                                    </li>
-                                    <li style="padding-top: 5px;">
-                                        <a class="btn btn-outline-info" data-bs-toggle="collapse" href="#gcp"
-                                            role="button" aria-expanded="false" aria-controls="gcp">
-                                            Google
-                                        </a>
-                                    </li>
-                                    <li style="padding-top: 5px;">
-                                        <a class="btn btn-outline-info" data-bs-toggle="collapse" href="#terraform"
-                                            role="button" aria-expanded="false" aria-controls="terraform">
-                                            Terraform
-                                        </a>
-                                    </li>
-                                </ul>
-                                <div class="collapse" id="aws">
-                                    <div class="card card-body">
-                                        <ul>
-                                            <li>S3</li>
-                                            <li>DynamoDB</li>
-                                            <li>CloudWatch</li>
-                                            <li>CloudFront</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="collapse" id="gcp">
-                                    <div class="card card-body">
-                                        <ul>
-                                            <li>Google Earth Engine</li>
-                                            <li>Google Collab</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="Row" id="skillsList">
+                <div class="card">
+                <div class="text-body-secondary" style="text-align: center; padding-top: 25%;">No Project Selected</div>
                 </div>
             </div>
         </div>
@@ -262,13 +111,19 @@
                                 </a>
                                 <a class="btn btn-outline-info" href="https://github.com/VictoriousMango/cartogram_questionaire">Github Link</a>
                                 <button type="button" class="btn btn-outline-info" onclick="ShowSkills('CartogramAssessment')">Show Skills</button>
-                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                <p class="card-text"><small class="text-body-secondary">Cartogram Assessment</small></p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="card mb-3" style="height: fit-content;">
                     <div class="row g-0 align-items-center">
+                        <div class="col-md-4">
+                            <div class="imgae">
+                            <img src="..\assets\CCA.png"
+                                class="img-fluid rounded-start" alt="...">
+                            </div>
+                        </div>
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h1 class="card-title">Customer Churn Analysis</h1>
@@ -293,20 +148,12 @@
                                     </ul>
                                 </p>
                                 <br><br>
-                                <a class="btn btn-outline-info" href="https://victoriousmango-cartogram-questio-cartogramassessmentapp-zo0znw.streamlit.app/">
-                                    Application Link
-                                </a>
                                 <a class="btn btn-outline-info" href="https://github.com/VictoriousMango/cartogram_questionaire">Github Link</a>
                                 <button type="button" class="btn btn-outline-info" onclick="ShowSkills('CCA')">Show Skills</button>
-                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                <p class="card-text"><small class="text-body-secondary">Customer Churn Analysis</small></p>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="imgae">
-                            <img src="..\assets\CCA.png"
-                                class="img-fluid rounded-start" alt="...">
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

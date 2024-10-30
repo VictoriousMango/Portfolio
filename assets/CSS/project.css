@@ -23,6 +23,36 @@
     border-radius: 10px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
+#skillsList {
+  display: flex;
+}
+#skillsList .card {
+    padding-top: 10px;
+    background-color: transparent;
+    width: 250px;
+    height: 175px;
+    border: 1px solid aquamarine;
+    border-radius: 10px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+#skillsList .card .card-title {
+  text-align: center;
+}
+
+#skillsList .card:hover {
+  transform: scale(1.025);
+}
+
+.flip-card {
+  padding-top: 10px;
+  background-color: transparent;
+  width: 250px;
+  height: 175px;
+  border: 1px solid aquamarine;
+  border-radius: 10px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
