@@ -55,22 +55,39 @@
         <section class="firstSection" id="home">
             <div class="container text-center">
                 <div class="row">
-                    <div class="col">
-                        <div class="DynamicScript">
-                            Hi, I am <span class="purple">Additya</span>
-                            <div>and I am a</div>
-                            <span id="element"></span>
-                        </div>
-                    </div>
-                    <div class="col">
+                    <div class="col-md-6">
                         <div class="ProfilePic-Resume">
                             <img src="assets/Additya_PassportSizePhoto_2024.jpg" alt="Avatar">
+                            <small class="text-body-secondary"><label>Click the Profile Picture to view Resume</label></small>
                             <div class="overlay">
                                 <a class="btn btn-outline-info" href="https://drive.google.com/drive/folders/1m8AFOlbclSRokRdiswD4zQwUSMdqb1Jn?usp=sharing">View Resume</a>
                             </div>
                         </div>
                         
                     </div>
+                    <div class="col-md-6">
+                        <div class="DynamicScript">
+                            Hi, I am Additya
+                            <div class="about"><small class="text-body-secondary"><span id="element"></span></small></div>
+                            <br>
+                        </div>
+                        <div class="row d-flex flex-nowrap" id="fields" style="text-align: left;">
+                            <div class="col" id="skillCol1">
+                                <div class="fieldDiv"><img src="assets\images\skill.png" style="height: 50px; width: 50px;" alt="skills">  Web Developer</div><br>
+                                <div class="fieldDiv"><img src="assets\images\skill.png" style="height: 50px; width: 50px;" alt="skills">  Python Developer</div><br>
+                                <div class="fieldDiv"><img src="assets\images\skill.png" style="height: 50px; width: 50px;" alt="skills">  Flask Developer</div><br>
+                                <div class="fieldDiv"><img src="assets\images\skill.png" style="height: 50px; width: 50px;" alt="skills">  Streamlit Developer</div><br>
+                            </div>
+                            <div class="col" id="skillCol2">
+                                <div class="fieldDiv"><img src="assets\images\skill.png" style="height: 50px; width: 50px;" alt="skills">  Business Analyst</div><br>
+                                <div class="fieldDiv"><img src="assets\images\skill.png" style="height: 50px; width: 50px;" alt="skills">  ML Engineer</div><br>
+                                <div class="fieldDiv"><img src="assets\images\skill.png" style="height: 50px; width: 50px;" alt="skills">  Data Scientist</div><br>
+                                <div class="fieldDiv"><img src="assets\images\skill.png" style="height: 50px; width: 50px;" alt="skills">  Spatial Data Scientist</div><br>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -152,8 +169,23 @@
             var element = document.body;
             element.dataset.bsTheme = element.dataset.bsTheme=="dark"?"light":"dark"
         }
+        
         var typed = new Typed('#element', {
-            strings: ['Web Developer', 'Python Developer', 'Spatial Data Scientist', 'Machine Learning Engineer', 'Business Analyst'],
+            strings: ["I'm a <b>BTech</b> in <i><u>Computer Science Engineering</u></i> graduate with <b>Minors</b> in <i><u>Business Analytics</u></i>, driven by a passion for innovation across fields. With a blend of technical expertise and business insight, I excel at crafting solutions from machine learning models to dynamic web applications. Having experience working as..."],
+            typeSpeed: 15,
+            loop: false,
+            backSpeed: 25,
+            backDelay: 2000
+        });
+        var typed = new Typed('#skilltemp1', {
+            strings: ["Web Developer", "Python Developer", "Flask Developer"],
+            typeSpeed: 50,
+            loop: true,
+            backSpeed: 25,
+            backDelay: 2000
+        });
+        var typed = new Typed('#skilltemp2', {
+            strings: ["Business Analyst", "Data Scientist", "ML Engineer", "Spatial Data Scientist"],
             typeSpeed: 50,
             loop: true,
             backSpeed: 25,

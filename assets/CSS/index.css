@@ -3,10 +3,42 @@
     
 }  */
 
+@media (max-width: 600px) {
+  .firstSection {
+    flex-direction: column;
+  }
+}
+
+
+
 /* For Dynamic Script on Home Page */
 .DynamicScript {
-    padding-top: 20%;
+    /* padding-top: 5%; */
     font-size: 3rem;
+}
+
+.DynamicScript .about {
+  font-size: medium;
+  height: 100px;
+  /* width: 350px; */
+  overflow-x: auto;
+}
+
+#skillCol1, #skillCol2 {
+  perspective: 1000px; /* Adjust for desired effect */
+}
+
+.fieldDiv {
+  border-radius: 10px; /* Adjust the value to make it more or less rounded */
+  transition: transform 0.3s, box-shadow 0.3s; /*Smooth transition*/
+}
+
+.fieldDiv:hover {
+  transform: scale(1.1) rotateY(10deg) rotateX(10deg);
+  box-shadow: 
+    0 0 10px rgba(0, 255, 0, 0.8),   /* Neon green */
+    0 0 20px rgba(0, 0, 255, 0.6),   /* Neon blue */
+    0 0 30px rgba(255, 255, 0, 0.5); /* Neon yellow */
 }
 
 /* Body */
