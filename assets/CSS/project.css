@@ -30,7 +30,7 @@
     padding-top: 10px;
     background-color: transparent;
     width: 250px;
-    height: 175px;
+    height: 200px;
     border: 1px solid aquamarine;
     border-radius: 10px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */

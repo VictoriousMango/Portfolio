@@ -17,6 +17,11 @@ skills = {
         "Front-End": ["HTML", "CSS", "Bootstrap"],
         "Machine Learning": ["Random Forest", "Linear Regression"], //, "Logistic Regression", "SVM"
         "Frameworks": ["Flask"]
+    },
+    "100PythonProject" : {
+        "Back-End": ["Python", "Flask"],
+        "Front-End": ["Streamlit", "HTML", "CSS", "Bootstrap"],
+        "Machine Learning" : ["Random Forest", "Decision Trees"]
     }
 }
 
