@@ -60,3 +60,107 @@ main {
     visibility: visible;
     opacity: 1;
 }
+
+/* Badges */
+h1 {
+    font-family: 'Arial', sans-serif; /* Modern font */
+    font-size: 2.5rem; /* Larger text */
+    font-weight: bold; /* Bold text */
+    color: #4a90e2; /* Blue color */
+    text-align: left; /* Center alignment */
+    margin-top: 20px; /* Spacing above */
+  }
+
+  hr {
+    border: 0; /* Remove default border */
+    height: 4px; /* Thickness */
+    background: linear-gradient(90deg, #4a90e2, #f9d641); /* Gradient color */
+    width: 60%; /* Reduce width */
+    /* margin: 10px auto; Center horizontally */
+  }
+.hexagon {
+    height: 100px;
+    filter: drop-shadow(5px 5px 5px #222222);
+    margin-bottom: 5px;
+}
+.badge__img {
+    height: 100px;
+    filter: drop-shadow(5px 5px 5px #222222);
+    width: fit-content;
+    align-self: center;
+    margin-bottom: 5px;
+  }
+.badge-container {
+    width: 100%;
+    overflow: hidden; /* Hide overflow for a clean look */
+    position: relative;
+    background-color: #f9f9f9;
+    padding: 10px 0;
+  }
+  
+  .badge-container .badge-row {
+    display: flex;
+    animation: scroll-left 20s linear infinite; /* Smooth scrolling */
+  }
+  
+  .badge-container .badge-col {
+    flex: 0 0 auto; /* Prevent wrapping */
+    margin: 0 10px; /* Spacing between badges */
+  }
+  
+  .badge-container .card {
+    width: fit-content;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+  }
+  
+  .badge-container .card:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .badge-container .badge-row:hover {
+    animation-play-state: paused; /* Pause scrolling when hovered */
+  }
+  
+/* Certificates */
+/* .carousel {
+    margin-left: 30%;
+    margin-right: 30%;
+} */
+
+.carousel-inner{
+    border: 4px solid rgba(16, 19, 220, 0.7);
+    border-radius: 15px;
+    /* background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)); */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    margin: 10px;
+}
+
+.certificate__img {
+    margin: 10px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.card-footer {
+    text-align: center;
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
