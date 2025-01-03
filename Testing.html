@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Navigator</title>
+    <style>
+        /* body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+        } */
+
+        .milestones {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+            display: flex;
+            height: 100vh;
+        }
+
+        .section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 50%;
+        }
+
+        .solar-system {
+            position: relative;
+            border-radius: 50%;
+            transform-style: preserve-3d;
+            animation: rotate 30s infinite linear;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .planet {
+            position: absolute;
+            bottom: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.5s ease-in-out, scale 0.5s ease-in-out;
+        }
+
+        .planet.active {
+            transform: scale(2) !important;
+            opacity: 0.5;
+        }
+
+        .sun {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 80px;
+            height: 80px;
+            background-color: #ffcc00;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 20px rgba(255, 204, 0, 0.8);
+        }
+
+        .milestone-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffcc00; /* Initially set to sun color */
+            color: black;
+            width: 50%;
+            height: 100%;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        .milestone-content h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .milestone-content p {
+            font-size: 18px;
+        }
+
+        .nav-buttons {
+            margin-top: 20px;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .nav-button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .nav-button:disabled {
+            background-color: #888;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="milestones">
+        <!-- Solar System Section -->
+        <div class="section">
+            <div class="solar-system">
+                <div class="sun"></div>
+                <!-- Planets -->
+                <div class="planet" style="transform: rotate(0deg) translateX(150px); background-color: #ff5733;"></div>
+                <div class="planet" style="transform: rotate(90deg) translateX(150px); background-color: #33c3ff;"></div>
+                <div class="planet" style="transform: rotate(180deg) translateX(150px); background-color: #33ff57;"></div>
+                <div class="planet" style="transform: rotate(270deg) translateX(150px); background-color: #f3ff33;"></div>
+            </div>
+            <div class="nav-buttons">
+                <button class="nav-button prev-btn" disabled>Previous</button>
+                <button class="nav-button next-btn" disabled>Next</button>
+            </div>
+        </div>
+
+        <!-- Milestone Content Section -->
+        <div class="milestone-content">
+            <h2>Welcome to the Solar System Navigator</h2>
+            <p>Click "Start" to explore milestones.</p>
+            <button class="nav-button start-btn">Start</button>
+        </div>
+    </div>
+
+    <script>
+        // Milestones data
+        const milestones = [
+            { title: "Docker Foundations", content: "Learned Docker fundamentals and containerization techniques." },
+            { title: "Freelance Work", content: "Developed projects using Flask, Python, and various web technologies." },
+            { title: "Hackathon Win", content: "Secured a position in the hackathon for ML projects." },
+            { title: "MTech Optical Engineering", content: "Currently pursuing my MTech degree and working on advanced optical systems." }
+        ];
+
+        // Elements
+        const planets = document.querySelectorAll('.planet');
+        const milestoneContent = document.querySelector('.milestone-content');
+        const prevButton = document.querySelector('.prev-btn');
+        const nextButton = document.querySelector('.next-btn');
+        const startButton = document.querySelector('.start-btn');
+
+        let currentIndex = -1;
+
+        // Update Milestone Content
+        function updateMilestone(index) {
+            planets.forEach((planet, i) => {
+                if (i === index) {
+                    planet.classList.add('active');
+                    milestoneContent.style.backgroundColor = planet.style.backgroundColor; // Set milestone background to active planet color
+                } else {
+                    planet.classList.remove('active');
+                }
+            });
+
+            if (index >= 0) {
+                milestoneContent.innerHTML = ` 
+                    <h2>${milestones[index].title}</h2>
+                    <p>${milestones[index].content}</p>
+                `;
+            }
+        }
+
+        // Reset to Welcome Screen
+        function resetToWelcome() {
+            milestoneContent.style.backgroundColor = "#ffcc00"; // Same as sun color
+            milestoneContent.style.color = "black";
+            milestoneContent.innerHTML = ` 
+                <h2>Welcome to the Solar System Navigator</h2>
+                <p>Click "Start" to explore milestones.</p>
+                <button class="nav-button start-btn">Start</button>
+            `;
+            planets.forEach(planet => planet.classList.remove('active'));
+            prevButton.disabled = true;
+            nextButton.disabled = true;
+
+            const startBtn = document.querySelector('.start-btn');
+            startBtn.addEventListener('click', () => {
+                startButtonHandler();
+            });
+        }
+
+        // Start Button Handler
+        function startButtonHandler() {
+            currentIndex = 0;
+            updateMilestone(currentIndex);
+            prevButton.disabled = false;
+            nextButton.disabled = false;
+            milestoneContent.style.backgroundColor = "#ffcc00"; // Same as sun color
+            milestoneContent.style.color = "black";
+            milestoneContent.innerHTML = `<h2>${milestones[currentIndex].title}</h2><p>${milestones[currentIndex].content}</p>`;
+        }
+
+        // Event Listeners
+        startButton.addEventListener('click', () => {
+            startButtonHandler();
+        });
+
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + milestones.length) % milestones.length;
+            updateMilestone(currentIndex);
+        });
+
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % milestones.length;
+            updateMilestone(currentIndex);
+        });
+
+        // Initial state
+        resetToWelcome();
+    </script>
+</body>
+
+</html>
