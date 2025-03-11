@@ -22,7 +22,13 @@ skills = {
         "Back-End": ["Python", "Flask"],
         "Front-End": ["Streamlit", "HTML", "CSS", "Bootstrap"],
         "Machine Learning" : ["Random Forest", "Decision Trees"]
-    }
+    },
+    "UnderstandingData" : {
+        "Back-End": ["Python", "Flask"],
+        "Front-End": ["HTML", "CSS", "Bootstrap"],
+        "Pre-Processing" : ["Correlation", "Multicollinearity Assessment"],
+        "Machine Learning" : ["Random Forest", "Decision Trees", "Linear Regression"]
+    },
 }
 
 function ShowSkills(project) {
