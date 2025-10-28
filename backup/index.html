@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additya - Developer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets\CSS\index.css">
+</head>
+
+<body>
+    <nav class="navbar sticky-top bg-body-tertiary navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" onclick="Toggling()">Additya's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><i><u>Home</u></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"href=".\pages\about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"href=".\pages\project.html">Project</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Contact
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://mail.google.com/mail/?view=cm&fs=1&to=additya.akash.mishra@gmail.com&body=Hi Additya," rel="noopener noreferrer" target="_blank">Gmail</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="https://www.linkedin.com/in/additya-akash-mishra-0abba7185/">LinkedIn</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="firstSection" id="home">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="ProfilePic-Resume">
+                            <img src="assets/Additya_PassportSizePhoto_2024.jpg" alt="Avatar">
+                            <small class="text-body-secondary"><label>Click the Profile Picture to view Resume</label></small>
+                            <div class="overlay">
+                                <a class="btn btn-outline-info" href="https://drive.google.com/drive/folders/1m8AFOlbclSRokRdiswD4zQwUSMdqb1Jn?usp=sharing">View Resume</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <div class="DynamicScript">
+                            Hi, I am Additya
+                            <div class="about"><small class="text-body-secondary"><span id="element"></span></small></div>
+                            <br>
+                        </div>
+                        <div class="row d-flex flex-nowrap" id="fields" style="text-align: left;">
+                            <div class="col" id="skillCol1">
+                                <div class="fieldDiv"><img src="assets\images\skill.png" style="height: 50px; width: 50px;" alt="skills">  Web Developer</div><br>
+                                <div class="fieldDiv"><img src="assets\images\skill.png" style="height: 50px; width: 50px;" alt="skills">  Python Developer</div><br>
+                                <div class="fieldDiv"><img src="assets\images\skill.png" style="height: 50px; width: 50px;" alt="skills">  Flask Developer</div><br>
+                                <div class="fieldDiv"><img src="assets\images\skill.png" style="height: 50px; width: 50px;" alt="skills">  Streamlit Developer</div><br>
+                            </div>
+                            <div class="col" id="skillCol2">
+                                <div class="fieldDiv"><img src="assets\images\skill.png" style="height: 50px; width: 50px;" alt="skills">  Business Analyst</div><br>
+                                <div class="fieldDiv"><img src="assets\images\skill.png" style="height: 50px; width: 50px;" alt="skills">  ML Engineer</div><br>
+                                <div class="fieldDiv"><img src="assets\images\skill.png" style="height: 50px; width: 50px;" alt="skills">  Data Scientist</div><br>
+                                <div class="fieldDiv"><img src="assets\images\skill.png" style="height: 50px; width: 50px;" alt="skills">  Spatial Data Scientist</div><br>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="secondSection">
+            <hr>
+            <div class="container text-center">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-auto">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="assets/Github.png" alt="Avatar" style="width:300px;height:300px;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>GitHub</h1>
+                                <p>Click the button below to see my GitHub profile, and my projects uploaded on it.</p>
+                                <a type="button" class="btn btn-outline-info" href="https://github.com/VictoriousMango">Info</a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-auto">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="assets/LinkedIn.png" alt="Avatar" style="width:275px;height:300px;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>LinkedIn</h1>
+                                <p>Click the button below and connect with me on LinkedIn</p>
+                                <a type="button" class="btn btn-outline-info" href="https://www.linkedin.com/in/additya-akash-mishra-0abba7185/">Info</a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-auto">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="assets/gif-owl-transparent.gif" alt="Avatar" style="width:300px;height:300px;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Codolio</h1>
+                                <p>Click the button below to see a summary of my profiles at different coding sites.</p>
+                                <a type="button" class="btn btn-outline-info" href="https://codolio.com/profile/Additya_Akash_Mishra">Info</a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-auto">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="assets/kaggle.png" alt="Avatar" style="width:300px;height:300px;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Kaggle</h1>
+                                <p>Click the button below to see view my profile at Kaggle.</p>
+                                <a type="button" class="btn btn-outline-info" href="https://www.kaggle.com/victoriousmango">Info</a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    
+
+    <!-- Javascript -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        function Toggling() {
+            console.log("Clicked the toggle button")
+            console.log()
+            var element = document.body;
+            element.dataset.bsTheme = element.dataset.bsTheme=="dark"?"light":"dark"
+        }
+        
+        var typed = new Typed('#element', {
+            strings: ["I'm a <b>BTech</b> in <i><u>Computer Science Engineering</u></i> graduate with <b>Minors</b> in <i><u>Business Analytics</u></i>, driven by a passion for innovation across fields. With a blend of technical expertise and business insight, I excel at crafting solutions from machine learning models to dynamic web applications. Having experience working as..."],
+            typeSpeed: 15,
+            loop: false,
+            backSpeed: 25,
+            backDelay: 2000
+        });
+        var typed = new Typed('#skilltemp1', {
+            strings: ["Web Developer", "Python Developer", "Flask Developer"],
+            typeSpeed: 50,
+            loop: true,
+            backSpeed: 25,
+            backDelay: 2000
+        });
+        var typed = new Typed('#skilltemp2', {
+            strings: ["Business Analyst", "Data Scientist", "ML Engineer", "Spatial Data Scientist"],
+            typeSpeed: 50,
+            loop: true,
+            backSpeed: 25,
+            backDelay: 2000
+        });
+    </script>
+</body>
+
+</html>

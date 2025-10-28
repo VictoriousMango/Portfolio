@@ -1,0 +1,111 @@
+/* Resume Section */
+#resume {
+    background-color: var(--bg-color);
+    color: var(--resume-text);
+    /* padding: 30px; */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Resume Container */
+.container {
+    width: inherit;
+    margin: 0 auto;
+    background-color: var(--resume-card-bg);
+    /* padding: 15px; */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: var(--resume-accent);
+}
+
+.header p {
+    font-size: 1rem;
+    color: var(--resume-text);
+}
+
+/* Two-Column Resume Layout */
+.resume-content {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 65vh;
+    overflow: auto;
+    scrollbar-width: none;
+    padding: 15px;
+}
+
+/* Left Column */
+.left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* background-color: var(--resume-card-bg); */
+}
+
+/* Right Column */
+.right-column {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Resume Card */
+.card {
+    background-color: var(--resume-card-bg);
+    border: 1px solid var(--resume-border);
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px var(--hover-glow);
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: scale(var(--hover-scale));
+    box-shadow: var(--resume-hover-glow);
+}
+
+/* Section Headings */
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--resume-accent);
+    border-bottom: 2px solid var(--resume-border);
+    padding-bottom: 5px;
+}
+
+/* Lists */
+.resume__ul {
+    /* list-style: none; */
+    padding-left: 20px;
+}
+
+.resume__ul::before {
+    /* content: "• "; */
+    color: var(--resume-text);
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 1%;
+    }
+    .resume-content {
+        flex-direction: column;
+    }
+}

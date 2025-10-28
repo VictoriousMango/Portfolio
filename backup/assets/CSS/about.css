@@ -12,63 +12,22 @@ body {
     overflow-x: hidden;
 }
 
-/* Certificates */
-.row {
-    display: flex;
-    flex-direction: row;
-}
-.certificates__category {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    border: 1px solid aquamarine;
-    height: inherit;
-    width: 25%;
-}
-
-.certificates__links {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    border: 1px solid var(--about-border-color_2);
-    height: inherit;
-    width: 65%;
-}
-
-
-
 /* Achievements */
  /* Fix the position of the sidebar with the list items */
  .list-group {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap; /*Prevent wrapping*/
-    width: 100%;
-    overflow: auto; /* Allow scrolling if items overflow */
-    border: 1px solid var(--about-border-color_2); /* Add some separation for clarity */
+    position: sticky;
+    top: 20px;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Allow scrolling if items overflow */
+    border: 1px solid #ddd; /* Add some separation for clarity */
     border-radius: 5px;
     padding: 5px;
-    margin: 5px;
 }
 
 .list-group-item {
-    margin-right: 5px;
-    color: var(--text-color);
-    text-decoration: none;
-    background: linear-gradient(to right, var(--about-border-color_1), var(--about-border-color_2));
-    background-size: 0% 2px;
-    background-position: 50% 100%;
-    background-repeat: no-repeat;
+    margin-right: 5px; /* Add some spacing between items */
 }
 
-.list-group-item:hover {
-    background-size: 100% 2px;
-    transition: background-size 0.5s ease; /* Smooth transition for hover effect */
-}
 
 /* Ensure the scrollable content has a height that allows scrolling */
 .scrollspy-example-1 {
@@ -82,13 +41,11 @@ body {
 
 /* Ensure the scrollable content has a height that allows scrolling */
 .scrollspy-example-2 {
-    margin: 5px;
-    height: 60vh;
+    height: 75vh;
     overflow-y: scroll;
-    scrollbar-width: none;
-    border: 1px solid var(--about-border-color_1); /* Example border color: Bootstrap primary color */
+    border: 1px solid aquamarine; /* Example border color: Bootstrap primary color */
     border-radius: 5px; /* Optional: Adds rounded corners */
-    /* padding: 10px; Optional: Adds padding inside the border */
+    padding: 10px; /*Optional: Adds padding inside the border*/
 }
 
 main {
@@ -144,12 +101,9 @@ h1 {
   hr {
     border: 0; /* Remove default border */
     height: 4px; /* Thickness */
-    background: var(--about-border-color); /* Gradient color */
+    background: linear-gradient(90deg, #4a90e2, #f9d641); /* Gradient color */
     width: 60%; /* Reduce width */
     /* margin: 10px auto; Center horizontally */
-  }
-  .Achievement__hr{
-    width: 100%;
   }
 .hexagon {
     height: 100px;
@@ -167,7 +121,7 @@ h1 {
     width: 100%;
     overflow: hidden; /* Hide overflow for a clean look */
     position: relative;
-    /* background-color: #f9f9f9; */
+    background-color: #f9f9f9;
     padding: 10px 0;
   }
   
@@ -194,135 +148,7 @@ h1 {
     transform: scale(1.1);
     transition: transform 0.3s ease;
   }
-ul {
-    list-style-type: none; /* Remove default list style */
-    padding-left: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    line-height: 1.5;
-}
-/* Achievement Block */
-.Achievement__card {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: max-content;
-}
-.Achievement__card-description {
-    margin: 5px;
-    width: 98%;
-    border-radius:10px;
-    border: none;
-    box-shadow: none;
-    background-color: var(--card-bg);
-    padding: 5px;
-    opacity: 0.5;
-    transition: all 0.3s ease;
-}
-.Achievement__card-skills {
-    display: none;
-    margin: 5px;
-    width: 0;
-    height: 100% !important;
-    border-radius:10px;
-    border: none;
-    box-shadow: none;
-    background-color: var(--card-bg);
-    padding: 5px;
-    opacity: 0.5;
-    transition: all 0.3s ease;
-}
-
-.Achievement__card:hover .Achievement__card-skills {
-    display: block;
-    border: var(--border-color);
-    opacity: 1;
-    width: 20%;
-    height: 100% !important;
-}
-
-.Achievement__card:hover .Achievement__card-description {
-    border: var(--border-color);
-    opacity: 1;
-    width: 78%;
-}
-  /* .Achievement__card {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .Achievement__card-description {
-    display: block;
-    margin: 5px;
-    width: 98%;
-    border-radius: 10px;
-    border: none;
-    box-shadow: none;
-    background-color: var(--card-bg);;
-    padding: 5px;
-    opacity: 0.5;
-    transition: border 0.3s ease;
-    transition: box-shadow 0.3s ease;
-    transition: opacity 0.3s ease;
-  }
-  .Achievement__card-description:hover {
-    border: var(--border-color);
-    box-shadow: 0 4px 6px var(--border-color);
-    opacity: 1;
-    background-color: rgba(0, 0, 0, 0);
-    width: 78%;
-    transition: all 0.1s ease;
-  }
-  .Achievement__card-skills {
-    display: none;
-    margin: 5px;
-    width: 0;
-    border-radius: 10px;
-    border: none;
-    box-shadow: none;
-    background-color: var(--card-bg);
-    padding: 5px;
-    opacity: 0.5;
-    transition: border 0.3s ease;
-    transition: box-shadow 0.3s ease;
-    transition: opacity 0.3s ease;
-  }
-  .Achievement__card:hover, .Achievement__card-skills {
-    display: block;
-    border: var(--border-color);
-    box-shadow: 0 4px 6px var(--border-color);
-    opacity: 1;
-    background-color: rgba(0, 0, 0, 0);
-    width: 10%;
-    transition: all 0.1s ease;
-  }
-  .Achievement__card:hover, .Achievement__card-description {
-    border: var(--border-color);
-    box-shadow: 0 4px 6px var(--border-color);
-    opacity: 1;
-    background-color: rgba(0, 0, 0, 0);
-    width: 78%;
-    transition: all 0.1s ease;
-  } */
   
-  /* Button Styles */
-  .btn__group {
-    padding-top: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .btn {
-    background-color: var(--card-bg);
-    color: var(--text-color);
-    border: 1px solid var(--border-color);
-    padding: 12px 24px;
-    border-radius: 8px; /* Rounded corners */
-    cursor: pointer;
-    transition: box-shadow 0.3s ease; /* Smooth transition */
-  }
-  
-
   @keyframes scroll-left {
     0% {
       transform: translateX(0);
@@ -365,7 +191,7 @@ ul {
 
 .card-footer {
     text-align: center;
-    /* background-color: #f8f9fa; */
+    background-color: #f8f9fa;
     font-weight: bold;
 }
 
@@ -381,7 +207,7 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Default for Computer */
     grid-template-rows: auto; /* Allow content to grow based on height */
-    height: 75vh;
+    height: 80vh;
     width: 100%;
 }
 
@@ -396,16 +222,11 @@ ul {
 
 .solar-system {
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     border-radius: 50%;
     transform-style: preserve-3d;
     animation: rotate 30s infinite linear;
     background: rgba(255, 255, 255, 0.1);
     border: 2px solid rgba(255, 255, 255, 0.2);
-    height: 0px;
-    width: 0px;
 }
 
 @keyframes rotate {
@@ -505,9 +326,7 @@ ul {
 
     ul {
         padding-left: 15px;
-        line-height: 1.5;
     }
-
 
     .btn {
         font-size: 0.9em;

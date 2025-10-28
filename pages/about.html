@@ -4,656 +4,732 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Additya - Developer Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="..\assets\CSS\about.css">
+    <title>Additya's Portfolio</title>
+    <link rel="stylesheet" href="../assets/css/Portfolio.css">
+    <link rel="stylesheet" href="../assets/css/About.css">
+    
 </head>
 
 <body>
-    <nav class="navbar sticky-top bg-body-tertiary navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#" onclick="Toggling()">Additya's Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><i><u>About</u></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./project.html">Project</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <main>
-        <div class="badges">
-            <h1>Earned Badges</h1>
-            <hr>
-            <div class="badge-container">
-                <div class="badge-row">
-                    <div class="badge-col">
-                        <div class="card">
-                            <svg viewBox="0 0 91 100" class="hexagon">
-                                <g>
-                                    <defs>
-                                        <linearGradient id="badge-gold-gradient" x1="52.5" y1="2.5" x2="52.5" y2="102.5"
-                                            gradientUnits="userSpaceOnUse">
-                                            <stop offset="0" stop-color="#f9d641"></stop>
-                                            <stop offset="1" stop-color="#f8bc36"></stop>
-                                        </linearGradient>
-                                    </defs>
-                                    <path fill="url(#badge-gold-gradient)"
-                                        d="M90.3892 44.9106L90.3893 44.914C90.5873 51.9976 90.3892 59.5788 89.8948 65.4581L89.8947 65.4581L89.894 65.4684C89.7459 67.8071 89.5241 69.8644 89.2548 71.4803C88.9812 73.1224 88.6689 74.2376 88.3726 74.7495L88.3684 74.7569L88.3644 74.7644C88.2249 75.0255 87.9549 75.366 87.5388 75.7853C87.1279 76.1994 86.5969 76.6683 85.9594 77.1872C84.6848 78.2247 83.011 79.4407 81.0792 80.7886C76.1371 84.1752 69.4065 88.1657 62.9661 91.6605L62.9645 91.6614C58.9514 93.8584 55.1183 95.8269 51.996 97.2447C50.4343 97.9539 49.0577 98.522 47.9293 98.9118C46.7841 99.3074 45.9476 99.5 45.4429 99.5C44.8368 99.5 43.7518 99.219 42.2485 98.6583C40.7685 98.1063 38.9475 97.3088 36.9015 96.3316C32.811 94.3779 27.849 91.7188 22.9696 88.9044C18.0901 86.09 13.3015 83.125 9.55688 80.5609C7.68397 79.2784 6.07847 78.1005 4.85537 77.0948C3.6188 76.0781 2.82774 75.2805 2.51554 74.7536C2.28519 74.3275 2.0493 73.5182 1.82917 72.3438C1.61115 71.1807 1.41751 69.7122 1.25082 68.0137C0.917563 64.6178 0.694767 60.3313 0.595718 55.7891L0.595639 55.7862C0.39748 48.597 0.496929 40.7167 0.991039 34.7412L0.991144 34.7412L0.991781 34.7309C1.13992 32.3423 1.36172 30.2598 1.63112 28.6185C1.90193 26.9685 2.21232 25.8224 2.51467 25.2483C2.86854 24.6758 3.67611 23.8504 4.9172 22.8226C6.15287 21.7992 7.77552 20.6094 9.70207 19.315L9.70402 19.3137C14.5518 16.0235 21.0868 12.0319 27.3246 8.63924L27.3247 8.63927L27.3296 8.63653C31.4393 6.34112 35.4202 4.29812 38.6657 2.83059C40.2891 2.09658 41.7217 1.5096 42.8908 1.10715C44.0779 0.698497 44.9386 0.5 45.4429 0.5C45.8599 0.5 46.5131 0.630344 47.3938 0.904038C48.2627 1.17405 49.3131 1.57058 50.508 2.07336C52.8947 3.07763 55.8302 4.49415 58.9957 6.13884L76.0424 15.9271C79.2093 17.9719 82.072 19.9123 84.2641 21.5505C85.3617 22.3708 86.285 23.1108 86.9918 23.7467C87.708 24.391 88.1652 24.8965 88.372 25.2495C88.6251 25.6975 88.8797 26.5434 89.1143 27.7675C89.346 28.9765 89.5489 30.5006 89.7217 32.2614C90.0674 35.7817 90.2902 40.2179 90.3892 44.9106Z"
-                                        stroke="#b78c00"></path>
-                                </g>
-                                <image class="badge-icon"
-                                    xlink:href="https://hrcdn.net/fcore/assets/badges/python-f70befd824.svg" x="50%"
-                                    y="22" height="27" width="27" transform="translate(-13.5, 0)"></image><text
-                                    class="badge-title" x="50%" y="65.5" font-size="10">Python</text>
-                                <g class="star-section" transform="translate(-21.5, 0)"><svg x="50%" y="71"
-                                        height="10"><svg class="badge-star" viewBox="0 0 6.54904 6.25825" width="7"
-                                            x="0">
-                                            <path class="star"
-                                                d="M55.51425,77.01983l-1.89417-.275-.84833-1.7175a.299.299,0,0,0-.27167-.16917.3245.3245,0,0,0-.2725.16917l-.305.61833-.5425,1.09916-.51417.075-1.38.2a.30333.30333,0,0,0-.18583.10083.33411.33411,0,0,0-.045.06833.35631.35631,0,0,0-.02417.07667.34087.34087,0,0,0-.005.04083.3038.3038,0,0,0,.02417.13417.33341.33341,0,0,0,.06667.0975l1.37167,1.33667-.2875,1.67167-.03667.21417c-.00167.01-.00167.02-.0025.02917l-.00167.0175a.26453.26453,0,0,0,.00167.04417.30489.30489,0,0,0,.44417.22917l1.69417-.89,1.69416.89a.30352.30352,0,0,0,.44084-.32L54.31175,78.874l1.37083-1.33667a.30339.30339,0,0,0-.16833-.5175"
-                                                transform="translate(-49.22548 -74.85817)"></path>
-                                        </svg><svg class="badge-star" viewBox="0 0 6.54904 6.25825" width="7" x="9">
-                                            <path class="star"
-                                                d="M55.51425,77.01983l-1.89417-.275-.84833-1.7175a.299.299,0,0,0-.27167-.16917.3245.3245,0,0,0-.2725.16917l-.305.61833-.5425,1.09916-.51417.075-1.38.2a.30333.30333,0,0,0-.18583.10083.33411.33411,0,0,0-.045.06833.35631.35631,0,0,0-.02417.07667.34087.34087,0,0,0-.005.04083.3038.3038,0,0,0,.02417.13417.33341.33341,0,0,0,.06667.0975l1.37167,1.33667-.2875,1.67167-.03667.21417c-.00167.01-.00167.02-.0025.02917l-.00167.0175a.26453.26453,0,0,0,.00167.04417.30489.30489,0,0,0,.44417.22917l1.69417-.89,1.69416.89a.30352.30352,0,0,0,.44084-.32L54.31175,78.874l1.37083-1.33667a.30339.30339,0,0,0-.16833-.5175"
-                                                transform="translate(-49.22548 -74.85817)"></path>
-                                        </svg><svg class="badge-star" viewBox="0 0 6.54904 6.25825" width="7" x="18">
-                                            <path class="star"
-                                                d="M55.51425,77.01983l-1.89417-.275-.84833-1.7175a.299.299,0,0,0-.27167-.16917.3245.3245,0,0,0-.2725.16917l-.305.61833-.5425,1.09916-.51417.075-1.38.2a.30333.30333,0,0,0-.18583.10083.33411.33411,0,0,0-.045.06833.35631.35631,0,0,0-.02417.07667.34087.34087,0,0,0-.005.04083.3038.3038,0,0,0,.02417.13417.33341.33341,0,0,0,.06667.0975l1.37167,1.33667-.2875,1.67167-.03667.21417c-.00167.01-.00167.02-.0025.02917l-.00167.0175a.26453.26453,0,0,0,.00167.04417.30489.30489,0,0,0,.44417.22917l1.69417-.89,1.69416.89a.30352.30352,0,0,0,.44084-.32L54.31175,78.874l1.37083-1.33667a.30339.30339,0,0,0-.16833-.5175"
-                                                transform="translate(-49.22548 -74.85817)"></path>
-                                        </svg><svg class="badge-star" viewBox="0 0 6.54904 6.25825" width="7" x="27">
-                                            <path class="star"
-                                                d="M55.51425,77.01983l-1.89417-.275-.84833-1.7175a.299.299,0,0,0-.27167-.16917.3245.3245,0,0,0-.2725.16917l-.305.61833-.5425,1.09916-.51417.075-1.38.2a.30333.30333,0,0,0-.18583.10083.33411.33411,0,0,0-.045.06833.35631.35631,0,0,0-.02417.07667.34087.34087,0,0,0-.005.04083.3038.3038,0,0,0,.02417.13417.33341.33341,0,0,0,.06667.0975l1.37167,1.33667-.2875,1.67167-.03667.21417c-.00167.01-.00167.02-.0025.02917l-.00167.0175a.26453.26453,0,0,0,.00167.04417.30489.30489,0,0,0,.44417.22917l1.69417-.89,1.69416.89a.30352.30352,0,0,0,.44084-.32L54.31175,78.874l1.37083-1.33667a.30339.30339,0,0,0-.16833-.5175"
-                                                transform="translate(-49.22548 -74.85817)"></path>
-                                        </svg><svg class="badge-star" viewBox="0 0 6.54904 6.25825" width="7" x="36">
-                                            <path class="star"
-                                                d="M55.51425,77.01983l-1.89417-.275-.84833-1.7175a.299.299,0,0,0-.27167-.16917.3245.3245,0,0,0-.2725.16917l-.305.61833-.5425,1.09916-.51417.075-1.38.2a.30333.30333,0,0,0-.18583.10083.33411.33411,0,0,0-.045.06833.35631.35631,0,0,0-.02417.07667.34087.34087,0,0,0-.005.04083.3038.3038,0,0,0,.02417.13417.33341.33341,0,0,0,.06667.0975l1.37167,1.33667-.2875,1.67167-.03667.21417c-.00167.01-.00167.02-.0025.02917l-.00167.0175a.26453.26453,0,0,0,.00167.04417.30489.30489,0,0,0,.44417.22917l1.69417-.89,1.69416.89a.30352.30352,0,0,0,.44084-.32L54.31175,78.874l1.37083-1.33667a.30339.30339,0,0,0-.16833-.5175"
-                                                transform="translate(-49.22548 -74.85817)"></path>
-                                        </svg></svg></g>
-                            </svg>
-                            <div class="card-footer text-body-secondary">
-                                HackerRank: Python Gold Badge
-                            </div>
-                        </div>
-                    </div>
-                    <div class="badge-col">
-                        <div class="card">
-                            <svg viewBox="0 0 91 100" class="hexagon">
-                                <g>
-                                    <defs>
-                                        <linearGradient id="badge-bronze-gradient" x1="52.5" y1="2.5" x2="52.5"
-                                            y2="102.5" gradientUnits="userSpaceOnUse">
-                                            <stop offset="0" stop-color="#ffc5ab"></stop>
-                                            <stop offset="1" stop-color="#ffa38a"></stop>
-                                        </linearGradient>
-                                    </defs>
-                                    <path fill="url(#badge-bronze-gradient)"
-                                        d="M90.3892 44.9106L90.3893 44.914C90.5873 51.9976 90.3892 59.5788 89.8948 65.4581L89.8947 65.4581L89.894 65.4684C89.7459 67.8071 89.5241 69.8644 89.2548 71.4803C88.9812 73.1224 88.6689 74.2376 88.3726 74.7495L88.3684 74.7569L88.3644 74.7644C88.2249 75.0255 87.9549 75.366 87.5388 75.7853C87.1279 76.1994 86.5969 76.6683 85.9594 77.1872C84.6848 78.2247 83.011 79.4407 81.0792 80.7886C76.1371 84.1752 69.4065 88.1657 62.9661 91.6605L62.9645 91.6614C58.9514 93.8584 55.1183 95.8269 51.996 97.2447C50.4343 97.9539 49.0577 98.522 47.9293 98.9118C46.7841 99.3074 45.9476 99.5 45.4429 99.5C44.8368 99.5 43.7518 99.219 42.2485 98.6583C40.7685 98.1063 38.9475 97.3088 36.9015 96.3316C32.811 94.3779 27.849 91.7188 22.9696 88.9044C18.0901 86.09 13.3015 83.125 9.55688 80.5609C7.68397 79.2784 6.07847 78.1005 4.85537 77.0948C3.6188 76.0781 2.82774 75.2805 2.51554 74.7536C2.28519 74.3275 2.0493 73.5182 1.82917 72.3438C1.61115 71.1807 1.41751 69.7122 1.25082 68.0137C0.917563 64.6178 0.694767 60.3313 0.595718 55.7891L0.595639 55.7862C0.39748 48.597 0.496929 40.7167 0.991039 34.7412L0.991144 34.7412L0.991781 34.7309C1.13992 32.3423 1.36172 30.2598 1.63112 28.6185C1.90193 26.9685 2.21232 25.8224 2.51467 25.2483C2.86854 24.6758 3.67611 23.8504 4.9172 22.8226C6.15287 21.7992 7.77552 20.6094 9.70207 19.315L9.70402 19.3137C14.5518 16.0235 21.0868 12.0319 27.3246 8.63924L27.3247 8.63927L27.3296 8.63653C31.4393 6.34112 35.4202 4.29812 38.6657 2.83059C40.2891 2.09658 41.7217 1.5096 42.8908 1.10715C44.0779 0.698497 44.9386 0.5 45.4429 0.5C45.8599 0.5 46.5131 0.630344 47.3938 0.904038C48.2627 1.17405 49.3131 1.57058 50.508 2.07336C52.8947 3.07763 55.8302 4.49415 58.9957 6.13884L76.0424 15.9271C79.2093 17.9719 82.072 19.9123 84.2641 21.5505C85.3617 22.3708 86.285 23.1108 86.9918 23.7467C87.708 24.391 88.1652 24.8965 88.372 25.2495C88.6251 25.6975 88.8797 26.5434 89.1143 27.7675C89.346 28.9765 89.5489 30.5006 89.7217 32.2614C90.0674 35.7817 90.2902 40.2179 90.3892 44.9106Z"
-                                        stroke="#bd6e52"></path>
-                                </g>
-                                <image class="badge-icon"
-                                    xlink:href="https://hrcdn.net/fcore/assets/badges/sql-89e76e7082.svg" x="50%" y="22"
-                                    height="27" width="27" transform="translate(-13.5, 0)"></image><text
-                                    class="badge-title" x="50%" y="65.5" font-size="10">Sql</text>
-                                <g class="star-section" transform="translate(-3.5, 0)"><svg x="50%" y="71"
-                                        height="10"><svg class="badge-star" viewBox="0 0 6.54904 6.25825" width="7"
-                                            x="0">
-                                            <path class="star"
-                                                d="M55.51425,77.01983l-1.89417-.275-.84833-1.7175a.299.299,0,0,0-.27167-.16917.3245.3245,0,0,0-.2725.16917l-.305.61833-.5425,1.09916-.51417.075-1.38.2a.30333.30333,0,0,0-.18583.10083.33411.33411,0,0,0-.045.06833.35631.35631,0,0,0-.02417.07667.34087.34087,0,0,0-.005.04083.3038.3038,0,0,0,.02417.13417.33341.33341,0,0,0,.06667.0975l1.37167,1.33667-.2875,1.67167-.03667.21417c-.00167.01-.00167.02-.0025.02917l-.00167.0175a.26453.26453,0,0,0,.00167.04417.30489.30489,0,0,0,.44417.22917l1.69417-.89,1.69416.89a.30352.30352,0,0,0,.44084-.32L54.31175,78.874l1.37083-1.33667a.30339.30339,0,0,0-.16833-.5175"
-                                                transform="translate(-49.22548 -74.85817)"></path>
-                                        </svg></svg></g>
-                            </svg>
-                            <div class="card-footer text-body-secondary">
-                                HackerRank: SQL Bronze Badge
-                            </div>
-                        </div>
-                    </div>
-                    <div class="badge-col">
-                        <div class="card">
-                            <img class="badge__img"
-                                src="https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png" alt="">
-                            <div class="card-footer text-body-secondary">
-                                GitHub: Quickdraw
-                            </div>
-                        </div>
-                    </div>
-                    <div class="badge-col">
-                        <div class="card">
-                            <img class="badge__img"
-                                src="https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png" alt="">
-                            <div class="card-footer text-body-secondary">
-                                GitHub: Pull Shark
-                            </div>
-                        </div>
+    <div class="main">
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="brand">Additya's Portfolio</div>
+            <ul>
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="./About.html" class="nav-link active">About</a></li>
+                <li><a href="./Projects.html" class="nav-link">Projects</a></li>
+                <li><a href="./Resume.html" class="nav-link">Digital Resume</a></li>
+                <!-- <li><a href="./Contacts.html" class="nav-link">Contact</a></li> -->
+            </ul>
+        </nav>
 
-                    </div>
-                    <div class="badge-col">
-                        <div class="card">
-                            <img class="badge__img"
-                                src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" alt="">
-                            <div class="card-footer text-body-secondary">
-                                GitHub: Yolo
+        <!-- Content Sections -->
+        <div class="content">
+            <section id="about" class="section active">
+                <div class="badges">
+                    <h1>Earned Badges</h1>
+                    <hr>
+                    <div class="badge-container">
+                        <div class="badge-row">
+                            <div class="badge-col">
+                                <div class="card">
+                                    <svg viewBox="0 0 91 100" class="hexagon">
+                                        <g>
+                                            <defs>
+                                                <linearGradient id="badge-gold-gradient" x1="52.5" y1="2.5" x2="52.5"
+                                                    y2="102.5" gradientUnits="userSpaceOnUse">
+                                                    <stop offset="0" stop-color="#f9d641"></stop>
+                                                    <stop offset="1" stop-color="#f8bc36"></stop>
+                                                </linearGradient>
+                                            </defs>
+                                            <path fill="url(#badge-gold-gradient)"
+                                                d="M90.3892 44.9106L90.3893 44.914C90.5873 51.9976 90.3892 59.5788 89.8948 65.4581L89.8947 65.4581L89.894 65.4684C89.7459 67.8071 89.5241 69.8644 89.2548 71.4803C88.9812 73.1224 88.6689 74.2376 88.3726 74.7495L88.3684 74.7569L88.3644 74.7644C88.2249 75.0255 87.9549 75.366 87.5388 75.7853C87.1279 76.1994 86.5969 76.6683 85.9594 77.1872C84.6848 78.2247 83.011 79.4407 81.0792 80.7886C76.1371 84.1752 69.4065 88.1657 62.9661 91.6605L62.9645 91.6614C58.9514 93.8584 55.1183 95.8269 51.996 97.2447C50.4343 97.9539 49.0577 98.522 47.9293 98.9118C46.7841 99.3074 45.9476 99.5 45.4429 99.5C44.8368 99.5 43.7518 99.219 42.2485 98.6583C40.7685 98.1063 38.9475 97.3088 36.9015 96.3316C32.811 94.3779 27.849 91.7188 22.9696 88.9044C18.0901 86.09 13.3015 83.125 9.55688 80.5609C7.68397 79.2784 6.07847 78.1005 4.85537 77.0948C3.6188 76.0781 2.82774 75.2805 2.51554 74.7536C2.28519 74.3275 2.0493 73.5182 1.82917 72.3438C1.61115 71.1807 1.41751 69.7122 1.25082 68.0137C0.917563 64.6178 0.694767 60.3313 0.595718 55.7891L0.595639 55.7862C0.39748 48.597 0.496929 40.7167 0.991039 34.7412L0.991144 34.7412L0.991781 34.7309C1.13992 32.3423 1.36172 30.2598 1.63112 28.6185C1.90193 26.9685 2.21232 25.8224 2.51467 25.2483C2.86854 24.6758 3.67611 23.8504 4.9172 22.8226C6.15287 21.7992 7.77552 20.6094 9.70207 19.315L9.70402 19.3137C14.5518 16.0235 21.0868 12.0319 27.3246 8.63924L27.3247 8.63927L27.3296 8.63653C31.4393 6.34112 35.4202 4.29812 38.6657 2.83059C40.2891 2.09658 41.7217 1.5096 42.8908 1.10715C44.0779 0.698497 44.9386 0.5 45.4429 0.5C45.8599 0.5 46.5131 0.630344 47.3938 0.904038C48.2627 1.17405 49.3131 1.57058 50.508 2.07336C52.8947 3.07763 55.8302 4.49415 58.9957 6.13884L76.0424 15.9271C79.2093 17.9719 82.072 19.9123 84.2641 21.5505C85.3617 22.3708 86.285 23.1108 86.9918 23.7467C87.708 24.391 88.1652 24.8965 88.372 25.2495C88.6251 25.6975 88.8797 26.5434 89.1143 27.7675C89.346 28.9765 89.5489 30.5006 89.7217 32.2614C90.0674 35.7817 90.2902 40.2179 90.3892 44.9106Z"
+                                                stroke="#b78c00"></path>
+                                        </g>
+                                        <image class="badge-icon"
+                                            xlink:href="https://hrcdn.net/fcore/assets/badges/python-f70befd824.svg"
+                                            x="50%" y="22" height="27" width="27" transform="translate(-13.5, 0)">
+                                        </image><text class="badge-title" x="50%" y="65.5" font-size="10">Python</text>
+                                        <g class="star-section" transform="translate(-21.5, 0)"><svg x="50%" y="71"
+                                                height="10"><svg class="badge-star" viewBox="0 0 6.54904 6.25825"
+                                                    width="7" x="0">
+                                                    <path class="star"
+                                                        d="M55.51425,77.01983l-1.89417-.275-.84833-1.7175a.299.299,0,0,0-.27167-.16917.3245.3245,0,0,0-.2725.16917l-.305.61833-.5425,1.09916-.51417.075-1.38.2a.30333.30333,0,0,0-.18583.10083.33411.33411,0,0,0-.045.06833.35631.35631,0,0,0-.02417.07667.34087.34087,0,0,0-.005.04083.3038.3038,0,0,0,.02417.13417.33341.33341,0,0,0,.06667.0975l1.37167,1.33667-.2875,1.67167-.03667.21417c-.00167.01-.00167.02-.0025.02917l-.00167.0175a.26453.26453,0,0,0,.00167.04417.30489.30489,0,0,0,.44417.22917l1.69417-.89,1.69416.89a.30352.30352,0,0,0,.44084-.32L54.31175,78.874l1.37083-1.33667a.30339.30339,0,0,0-.16833-.5175"
+                                                        transform="translate(-49.22548 -74.85817)"></path>
+                                                </svg><svg class="badge-star" viewBox="0 0 6.54904 6.25825" width="7"
+                                                    x="9">
+                                                    <path class="star"
+                                                        d="M55.51425,77.01983l-1.89417-.275-.84833-1.7175a.299.299,0,0,0-.27167-.16917.3245.3245,0,0,0-.2725.16917l-.305.61833-.5425,1.09916-.51417.075-1.38.2a.30333.30333,0,0,0-.18583.10083.33411.33411,0,0,0-.045.06833.35631.35631,0,0,0-.02417.07667.34087.34087,0,0,0-.005.04083.3038.3038,0,0,0,.02417.13417.33341.33341,0,0,0,.06667.0975l1.37167,1.33667-.2875,1.67167-.03667.21417c-.00167.01-.00167.02-.0025.02917l-.00167.0175a.26453.26453,0,0,0,.00167.04417.30489.30489,0,0,0,.44417.22917l1.69417-.89,1.69416.89a.30352.30352,0,0,0,.44084-.32L54.31175,78.874l1.37083-1.33667a.30339.30339,0,0,0-.16833-.5175"
+                                                        transform="translate(-49.22548 -74.85817)"></path>
+                                                </svg><svg class="badge-star" viewBox="0 0 6.54904 6.25825" width="7"
+                                                    x="18">
+                                                    <path class="star"
+                                                        d="M55.51425,77.01983l-1.89417-.275-.84833-1.7175a.299.299,0,0,0-.27167-.16917.3245.3245,0,0,0-.2725.16917l-.305.61833-.5425,1.09916-.51417.075-1.38.2a.30333.30333,0,0,0-.18583.10083.33411.33411,0,0,0-.045.06833.35631.35631,0,0,0-.02417.07667.34087.34087,0,0,0-.005.04083.3038.3038,0,0,0,.02417.13417.33341.33341,0,0,0,.06667.0975l1.37167,1.33667-.2875,1.67167-.03667.21417c-.00167.01-.00167.02-.0025.02917l-.00167.0175a.26453.26453,0,0,0,.00167.04417.30489.30489,0,0,0,.44417.22917l1.69417-.89,1.69416.89a.30352.30352,0,0,0,.44084-.32L54.31175,78.874l1.37083-1.33667a.30339.30339,0,0,0-.16833-.5175"
+                                                        transform="translate(-49.22548 -74.85817)"></path>
+                                                </svg><svg class="badge-star" viewBox="0 0 6.54904 6.25825" width="7"
+                                                    x="27">
+                                                    <path class="star"
+                                                        d="M55.51425,77.01983l-1.89417-.275-.84833-1.7175a.299.299,0,0,0-.27167-.16917.3245.3245,0,0,0-.2725.16917l-.305.61833-.5425,1.09916-.51417.075-1.38.2a.30333.30333,0,0,0-.18583.10083.33411.33411,0,0,0-.045.06833.35631.35631,0,0,0-.02417.07667.34087.34087,0,0,0-.005.04083.3038.3038,0,0,0,.02417.13417.33341.33341,0,0,0,.06667.0975l1.37167,1.33667-.2875,1.67167-.03667.21417c-.00167.01-.00167.02-.0025.02917l-.00167.0175a.26453.26453,0,0,0,.00167.04417.30489.30489,0,0,0,.44417.22917l1.69417-.89,1.69416.89a.30352.30352,0,0,0,.44084-.32L54.31175,78.874l1.37083-1.33667a.30339.30339,0,0,0-.16833-.5175"
+                                                        transform="translate(-49.22548 -74.85817)"></path>
+                                                </svg><svg class="badge-star" viewBox="0 0 6.54904 6.25825" width="7"
+                                                    x="36">
+                                                    <path class="star"
+                                                        d="M55.51425,77.01983l-1.89417-.275-.84833-1.7175a.299.299,0,0,0-.27167-.16917.3245.3245,0,0,0-.2725.16917l-.305.61833-.5425,1.09916-.51417.075-1.38.2a.30333.30333,0,0,0-.18583.10083.33411.33411,0,0,0-.045.06833.35631.35631,0,0,0-.02417.07667.34087.34087,0,0,0-.005.04083.3038.3038,0,0,0,.02417.13417.33341.33341,0,0,0,.06667.0975l1.37167,1.33667-.2875,1.67167-.03667.21417c-.00167.01-.00167.02-.0025.02917l-.00167.0175a.26453.26453,0,0,0,.00167.04417.30489.30489,0,0,0,.44417.22917l1.69417-.89,1.69416.89a.30352.30352,0,0,0,.44084-.32L54.31175,78.874l1.37083-1.33667a.30339.30339,0,0,0-.16833-.5175"
+                                                        transform="translate(-49.22548 -74.85817)"></path>
+                                                </svg></svg></g>
+                                    </svg>
+                                    <div class="card-footer text-body-secondary">
+                                        HackerRank: Python Gold Badge
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                            <div class="badge-col">
+                                <div class="card">
+                                    <svg viewBox="0 0 91 100" class="hexagon">
+                                        <g>
+                                            <defs>
+                                                <linearGradient id="badge-bronze-gradient" x1="52.5" y1="2.5" x2="52.5"
+                                                    y2="102.5" gradientUnits="userSpaceOnUse">
+                                                    <stop offset="0" stop-color="#ffc5ab"></stop>
+                                                    <stop offset="1" stop-color="#ffa38a"></stop>
+                                                </linearGradient>
+                                            </defs>
+                                            <path fill="url(#badge-bronze-gradient)"
+                                                d="M90.3892 44.9106L90.3893 44.914C90.5873 51.9976 90.3892 59.5788 89.8948 65.4581L89.8947 65.4581L89.894 65.4684C89.7459 67.8071 89.5241 69.8644 89.2548 71.4803C88.9812 73.1224 88.6689 74.2376 88.3726 74.7495L88.3684 74.7569L88.3644 74.7644C88.2249 75.0255 87.9549 75.366 87.5388 75.7853C87.1279 76.1994 86.5969 76.6683 85.9594 77.1872C84.6848 78.2247 83.011 79.4407 81.0792 80.7886C76.1371 84.1752 69.4065 88.1657 62.9661 91.6605L62.9645 91.6614C58.9514 93.8584 55.1183 95.8269 51.996 97.2447C50.4343 97.9539 49.0577 98.522 47.9293 98.9118C46.7841 99.3074 45.9476 99.5 45.4429 99.5C44.8368 99.5 43.7518 99.219 42.2485 98.6583C40.7685 98.1063 38.9475 97.3088 36.9015 96.3316C32.811 94.3779 27.849 91.7188 22.9696 88.9044C18.0901 86.09 13.3015 83.125 9.55688 80.5609C7.68397 79.2784 6.07847 78.1005 4.85537 77.0948C3.6188 76.0781 2.82774 75.2805 2.51554 74.7536C2.28519 74.3275 2.0493 73.5182 1.82917 72.3438C1.61115 71.1807 1.41751 69.7122 1.25082 68.0137C0.917563 64.6178 0.694767 60.3313 0.595718 55.7891L0.595639 55.7862C0.39748 48.597 0.496929 40.7167 0.991039 34.7412L0.991144 34.7412L0.991781 34.7309C1.13992 32.3423 1.36172 30.2598 1.63112 28.6185C1.90193 26.9685 2.21232 25.8224 2.51467 25.2483C2.86854 24.6758 3.67611 23.8504 4.9172 22.8226C6.15287 21.7992 7.77552 20.6094 9.70207 19.315L9.70402 19.3137C14.5518 16.0235 21.0868 12.0319 27.3246 8.63924L27.3247 8.63927L27.3296 8.63653C31.4393 6.34112 35.4202 4.29812 38.6657 2.83059C40.2891 2.09658 41.7217 1.5096 42.8908 1.10715C44.0779 0.698497 44.9386 0.5 45.4429 0.5C45.8599 0.5 46.5131 0.630344 47.3938 0.904038C48.2627 1.17405 49.3131 1.57058 50.508 2.07336C52.8947 3.07763 55.8302 4.49415 58.9957 6.13884L76.0424 15.9271C79.2093 17.9719 82.072 19.9123 84.2641 21.5505C85.3617 22.3708 86.285 23.1108 86.9918 23.7467C87.708 24.391 88.1652 24.8965 88.372 25.2495C88.6251 25.6975 88.8797 26.5434 89.1143 27.7675C89.346 28.9765 89.5489 30.5006 89.7217 32.2614C90.0674 35.7817 90.2902 40.2179 90.3892 44.9106Z"
+                                                stroke="#bd6e52"></path>
+                                        </g>
+                                        <image class="badge-icon"
+                                            xlink:href="https://hrcdn.net/fcore/assets/badges/sql-89e76e7082.svg"
+                                            x="50%" y="22" height="27" width="27" transform="translate(-13.5, 0)">
+                                        </image><text class="badge-title" x="50%" y="65.5" font-size="10">Sql</text>
+                                        <g class="star-section" transform="translate(-3.5, 0)"><svg x="50%" y="71"
+                                                height="10"><svg class="badge-star" viewBox="0 0 6.54904 6.25825"
+                                                    width="7" x="0">
+                                                    <path class="star"
+                                                        d="M55.51425,77.01983l-1.89417-.275-.84833-1.7175a.299.299,0,0,0-.27167-.16917.3245.3245,0,0,0-.2725.16917l-.305.61833-.5425,1.09916-.51417.075-1.38.2a.30333.30333,0,0,0-.18583.10083.33411.33411,0,0,0-.045.06833.35631.35631,0,0,0-.02417.07667.34087.34087,0,0,0-.005.04083.3038.3038,0,0,0,.02417.13417.33341.33341,0,0,0,.06667.0975l1.37167,1.33667-.2875,1.67167-.03667.21417c-.00167.01-.00167.02-.0025.02917l-.00167.0175a.26453.26453,0,0,0,.00167.04417.30489.30489,0,0,0,.44417.22917l1.69417-.89,1.69416.89a.30352.30352,0,0,0,.44084-.32L54.31175,78.874l1.37083-1.33667a.30339.30339,0,0,0-.16833-.5175"
+                                                        transform="translate(-49.22548 -74.85817)"></path>
+                                                </svg></svg></g>
+                                    </svg>
+                                    <div class="card-footer text-body-secondary">
+                                        HackerRank: SQL Bronze Badge
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="badge-col">
+                                <div class="card">
+                                    <img class="badge__img"
+                                        src="https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png"
+                                        alt="">
+                                    <div class="card-footer text-body-secondary">
+                                        GitHub: Quickdraw
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="badge-col">
+                                <div class="card">
+                                    <img class="badge__img"
+                                        src="https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png"
+                                        alt="">
+                                    <div class="card-footer text-body-secondary">
+                                        GitHub: Pull Shark
+                                    </div>
+                                </div>
 
-                    </div>
-                </div>
-            </div>
-        </div>
+                            </div>
+                            <div class="badge-col">
+                                <div class="card">
+                                    <img class="badge__img"
+                                        src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png"
+                                        alt="">
+                                    <div class="card-footer text-body-secondary">
+                                        GitHub: Yolo
+                                    </div>
+                                </div>
 
-        <h1>Milestones</h1>
-        <hr>
-        <div class="milestones">
+                            </div>
+                            <div class="badge-col">
+                                <div class="card">
+                                    <img class="badge__img"
+                                    src="https://cdn.qwiklabs.com/VF6eQ1bV8SfqKBpu8AVD%2F4G93sg9wJQ0wWe9CTc%2FJ%2F4%3D"
+                                        alt="">
+                                    <div class="card-footer text-body-secondary">
+                                        Google: Introduction to GenAI
+                                    </div>
+                                </div>
 
-            <!-- Solar System Section -->
-            <div class="section">
-                <div class="solar-system">
-                    <div class="sun"></div>
-                    <!-- Planets -->
-                    <div class="planet" style="transform: rotate(0deg) translateX(150px); background-color: #ff5733;">
-                    </div>
-                    <div class="planet" style="transform: rotate(90deg) translateX(150px); background-color: #33c3ff;">
-                    </div>
-                    <div class="planet" style="transform: rotate(180deg) translateX(150px); background-color: #33ff57;">
-                    </div>
-                    <div class="planet" style="transform: rotate(270deg) translateX(150px); background-color: #f3ff33;">
-                    </div>
-                </div>
-                <div class="nav-buttons">
-                    <button class="nav-button prev-btn" disabled>Previous</button>
-                    <button class="nav-button next-btn" disabled>Next</button>
-                </div>
-            </div>
-
-            <!-- Milestone Content Section -->
-            <div class="milestone-content">
-                <h2>Welcome to the Solar System Milestone/ Navigator</h2>
-                <p>Click "Start" to explore milestones.</p>
-                <button class="nav-button start-btn">Start</button>
-            </div>
-        </div>
-
-        <div class="certificates">
-            <h1>Certifications & Recommendations</h1>
-            <hr>
-            <div class="row" style="width: 100%;">
-                <dic class="col" style="width: 62%;">
-                    <!-- <h4 style="text-align: center;">Certifications</h4> -->
-                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="card">
-                                    <!-- https://drive.google.com/file/d/1nDDvxd2TXKcAwbfjb2WQvYeb1pYMviJo/view?usp=sharing -->
-                                    <img class="certificate__img"
-                                        src="https://drive.google.com/thumbnail?id=1nDDvxd2TXKcAwbfjb2WQvYeb1pYMviJo&sz=w1000">
-                                    <div class="card-footer">
-                                        Docker Foundations Professional Certificate
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card">
-                                    <!-- https://drive.google.com/file/d/1pQuJKWFsHDoDMqaCN8fS1xNY4VVYeJMc/view?usp=drive_link -->
-                                    <img class="certificate__img"
-                                        src="https://drive.google.com/thumbnail?id=1pQuJKWFsHDoDMqaCN8fS1xNY4VVYeJMc&sz=w1000">
-                                    <div class="card-footer">
-                                        AI-Driven Data Analysis
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card">
-                                    <!-- https://drive.google.com/file/d/1N2JIRQJN0WAI3XmB6Vpp2TJNnGvwWM5l/view?usp=drive_link -->
-                                    <img class="certificate__img"
-                                        src="https://drive.google.com/thumbnail?id=1N2JIRQJN0WAI3XmB6Vpp2TJNnGvwWM5l&sz=w1000">
-                                    <div class="card-footer">
-                                        AI Productivity Hacks
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card">
-                                    <!-- https://drive.google.com/file/d/1AIQzWkoMZDI_SG-P7RVQ_juHkv7VwutA/view?usp=drive_link -->
-                                    <img class="certificate__img"
-                                        src="https://drive.google.com/thumbnail?id=1AIQzWkoMZDI_SG-P7RVQ_juHkv7VwutA&sz=w1000">
-                                    <div class="card-footer">
-                                        AWS: DynamoDB
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card">
-                                    <!-- https://drive.google.com/file/d/1BSk4lCEu0e0NHbV45dhQh3LdG3XIloWW/view?usp=drive_link -->
-                                    <img class="certificate__img"
-                                        src="https://drive.google.com/thumbnail?id=1BSk4lCEu0e0NHbV45dhQh3LdG3XIloWW&sz=w1000">
-                                    <div class="card-footer">
-                                        GenAI: Creative Content
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card">
-                                    <!-- https://drive.google.com/file/d/1GAebgJ16WnFmMOxbR2vi2FonklRc3T70/view?usp=drive_link -->
-                                    <img class="certificate__img"
-                                        src="https://drive.google.com/thumbnail?id=1GAebgJ16WnFmMOxbR2vi2FonklRc3T70&sz=w1000">
-                                    <div class="card-footer">
-                                        Docker: Introduction
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card">
-                                    <!-- https://drive.google.com/file/d/1sMtdVen27hvmZyD9iLkt8FRpPsOlU49i/view?usp=drive_link -->
-                                    <img class="certificate__img"
-                                        src="https://drive.google.com/thumbnail?id=1sMtdVen27hvmZyD9iLkt8FRpPsOlU49i&sz=w1000">
-                                    <div class="card-footer">
-                                        Prompt Engineering: Introduction
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card">
-                                    <!-- https://drive.google.com/file/d/1Q35HVIHAwo5oO0oK4MJ4oFL19l88UGyT/view?usp=drive_link -->
-                                    <img class="certificate__img"
-                                        src="https://drive.google.com/thumbnail?id=1Q35HVIHAwo5oO0oK4MJ4oFL19l88UGyT&sz=w1000">
-                                    <div class="card-footer">
-                                        Docker Compose
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card">
-                                    <!-- https://drive.google.com/file/d/1B7ztBXNIrspwzuox_F9rkaP4NhJU5-_A/view?usp=drive_link -->
-                                    <img class="certificate__img"
-                                        src="https://drive.google.com/thumbnail?id=1B7ztBXNIrspwzuox_F9rkaP4NhJU5-_A&sz=w1000">
-                                    <div class="card-footer">
-                                        Prompt to Presentation
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                </dic>
-                <dic class="col" style="width: 28%;">
-                    <!-- <h4 style="text-align: center;">Recommendations</h4> -->
-                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="card">
-                                    <!-- https://drive.google.com/file/d/1MU1NDoPiIjWnPjKjAGFT0vz2d2W-IWZv/view?usp=drive_link -->
-                                    <img class="certificate__img"
-                                        src="https://drive.google.com/thumbnail?id=1MU1NDoPiIjWnPjKjAGFT0vz2d2W-IWZv&sz=w1000">
-                                    <div class="card-footer">
-                                        Freelance Work
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card">
-                                    <!-- https://drive.google.com/file/d/1R8C-dvOU5d3eU6K-VwZtS7XBJv9qC97P/view?usp=drive_link -->
-                                    <img class="certificate__img"
-                                        src="https://drive.google.com/thumbnail?id=1R8C-dvOU5d3eU6K-VwZtS7XBJv9qC97P&sz=w1000">
-                                    <div class="card-footer">
-                                        Internship at GE Appliances
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                </dic>
-            </div>
-        </div>
-
-
-        <div class="container-fluid achievements">
-            <h1>Achievements</h1>
-            <hr>
-            <div id="list-example" class="list-group d-flex flex-row col-12 col-md-3 mb-3" style="width: 100%;">
-                <a class="list-group-item list-group-item-action" href="#item-1">Mapathon Project</a>
-                <a class="list-group-item list-group-item-action" href="#item-2">Freelance Project</a>
-                <a class="list-group-item list-group-item-action" href="#item-3">Research Project</a>
-                <a class="list-group-item list-group-item-action" href="#item-4">Questionnaire
-                    Assessment</a>
-            </div>
-            <div class="row" style="width: 100%; display: flex; flex-wrap: wrap; justify-content: space-evenly;">
-                <div class="col-12 col-md-3 mb-3">
-
-                    <div class="skills">
-                        <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
-                            class="scrollspy-example-1" tabindex="0">
-                            <div id="skill-1">
-                                <h2>Mapathon Project skills</h2>
-                                <ul>
-                                    <li>Geospatial Data Analysis</li>
-                                    <li>QGIS Software</li>
-                                    <li>Data Acquisition and Processing</li>
-                                    <li>Data Categorization and classification</li>
-                                    <li>Cartography</li>
-                                    <li>Data Visualization</li>
-                                </ul>
-                            </div>
-                            <div id="skill-2">
-                                <h2>Freelance Project skills</h2>
-                                <ul>
-                                    <li>Python</li>
-                                    <li>Bootstrap</li>
-                                    <li>Jinja Template Engine</li>
-                                    <li>Flask SQL Alchemy</li>
-                                    <li>SQLlite Database</li>
-                                </ul>
-                            </div>
-                            <div id="skill-3">
-                                <h2>Research Project skills</h2>
-                                <ul>
-                                    <li>Spatial Mapping</li>
-                                    <li>Google Earth Engine</li>
-                                    <li>Python</li>
-                                    <li>Statistical Analysis</li>
-                                    <li>Machine Learning</li>
-                                </ul>
-                            </div>
-                            <div id="skill-4">
-                                <h2>Questionnaire Assessment</h2>
-                                <ul>
-                                    <li>Streamlit Mapping</li>
-                                    <li>Python</li>
-                                    <li>No-SQL Database Management (Deta)</li>
-                                    <li>Modular Application Design</li>
-                                    <li>Spatial Data Assessment</li>
-                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 mb-3">
-                    <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
-                        class="scrollspy-example-2" tabindex="0">
-                        <div id="item-1">
-                            <h4><u><i>Mapathon Project</i></u></h4>
-                            <br>
-                            <h3>Electric Vehicle Adoption Map | QGIS, Data Acquisition, GIS Analysis</h3>
-                            <br>
-                            <p>
-                                As part of the IIT Bombay FOSSEE Mapathon, I created an insightful map that
-                                showcases
-                                India's
-                                efforts to promote electric vehicle adoption. This project integrated reliable data
-                                sources
-                                such as:
-                            </p>
-                                <br>
+                <h1>Milestones</h1>
+                <hr>
+                <div class="milestones">
+
+                    <!-- Solar System Section -->
+                    <div class="section active">
+                        <div class="solar-system">
+                            <div class="sun"></div>
+                            <!-- Planets -->
+                            <div class="planet"
+                                style="transform: rotate(0deg) translateX(150px); background-color: #ff5733;">
+                            </div>
+                            <div class="planet"
+                                style="transform: rotate(90deg) translateX(150px); background-color: #33c3ff;">
+                            </div>
+                            <div class="planet"
+                                style="transform: rotate(180deg) translateX(150px); background-color: #33ff57;">
+                            </div>
+                            <div class="planet"
+                                style="transform: rotate(270deg) translateX(150px); background-color: #f3ff33;">
+                            </div>
+                        </div>
+                        <div class="nav-buttons">
+                            <button class="nav-button prev-btn" disabled>Previous</button>
+                            <button class="nav-button next-btn" disabled>Next</button>
+                        </div>
+                    </div>
+
+                    <!-- Milestone Content Section -->
+                    <div class="milestone-content">
+                        <h2>Welcome to the Solar System Milestone/ Navigator</h2>
+                        <p>Click "Start" to explore milestones.</p>
+                        <button class="nav-button start-btn">Start</button>
+                    </div>
+                </div>
+
+                <div class="certificates">
+                    <h1>Certifications & Recommendations</h1>
+                    <hr>
+                    <br>
+                    <div class="row" style="width: 100%; display: none;">
+                        <div class="certificates__category">
+                            <h3>Certificates</h3>
+                            <hr>
                             <ul>
-                                <li><b>Data from the Ministry of Heavy Industries:</b> Acquired from official
-                                    government
-                                    releases and processed into structured Excel sheets for further analysis.
-                                </li>
-                                <li>
-                                    <b>State Boundaries from Bhuvan:</b> Leveraged official boundary data to ensure
-                                    geographical accuracy.
-                                </li>
+                                <li><a href="#Programming_Languages">Programing Languages</a></li>
+                                <li><a href="AI_ML">AI & ML</a></li>
                             </ul>
-                            <br>
-                            <p>
-                                Using QGIS, I developed four maps that help users:
-                            </p>
-                            <ul>
-                                <li>Identify the best states for purchasing electric vehicles.</li>
-                                <li>Determine optimal inter-state travel routes based on charger density.</li>
-                                <li>Analyze the ongoing shift in the Indian automobile industry towards electric
-                                    vehicles.
-                                </li>
-                            </ul>
-                            <p>
-                            This project enhances decision-making in electric vehicle adoption by providing
-                            practical
-                            insights through comprehensive spatial data.
-                            </p>
-                            <div class="container-fluid">
-                                <a class="btn btn-outline-info" href="#skill-1">Skills</a>
-                                <a class="btn btn-outline-info"
-                                    href="https://www.linkedin.com/posts/thota-sivasankar-11197861_niit-gismapping-geospatial-activity-7074433395044286465-HHuj?utm_source=share&utm_medium=member_desktop">
-                                    Linked Post
-                                </a>
-                            </div>
                         </div>
-                        <hr>
-                        <div id="item-2">
-                            <h4><u><i>Freelance Project</i></u></h4>
-                            <br>
-                            <h3>Efficient Billing Management System for a Law Firm | Flask, SQLite, Python</h3>
-                            <br>
-                            <p>
-                                I developed a robust Flask-based web application for a law firm, streamlining their
-                                billing
-                                processes and significantly reducing the time spent on managing financial records.
-                                Leveraging the Jinja template engine and Flask-SQL Alchemy, I connected the
-                                application
-                                to a
-                                local SQLite database, enabling seamless data management and retrieval.
-                                <br><br>
-                                Key features include:
-                                <br>
-                            <ul>
-                                <li><b>Bill Logging:</b> Automatically generates Google documents for bill details
-                                    and
-                                    collects
-                                    additional expense data.
-                                </li>
-                                <li>
-                                    <b>Database Viewing and Sorting:</b> Allows users to view and sort billing
-                                    records
-                                    by
-                                    bank name or
-                                    bill generation time.
-                                </li>
-                                <li>
-                                    <b>Comprehensive Bill Generation:</b> Compiles bills from selected banks,
-                                    calculates
-                                    grand totals,
-                                    and enables easy download for records.
-                                </li>
-                                <li>
-                                    <b>User-Friendly Execution:</b> Simplified application launch through .bat
-                                    files,
-                                    making
-                                    it
-                                    accessible and easy to use for non-technical staff.
-                                </li>
-                            </ul><br>
-                            This project empowered the law firm to efficiently manage and access their billing data,
-                            saving valuable time and resources.
-                            </p>
-                            <div class="container-fluid">
-                                <a class="btn btn-outline-info" href="#skill-2">Skills</a>
-                                <a class="btn btn-outline-info"
-                                    href="https://drive.google.com/file/d/1MU1NDoPiIjWnPjKjAGFT0vz2d2W-IWZv/view?usp=sharing">
-                                    Letter of Recommendation
-                                </a>
-                            </div>
-                        </div>
-                        <hr>
-                        <div id="item-3">
-                            <h4><u><i>Research Project</i></u></h4>
-                            <br>
-                            <h3>Landslide Susceptibility Mapping Algorithm | Google Earth Engine, Machine Learning,
-                                Python
-                            </h3>
-                            <br>
-                            <p>
-                                I developed an advanced Landslide Susceptibility Mapping algorithm designed to
-                                minimize
-                                creator subjectivity, providing more accurate and reliable susceptible area
-                                identification.
-                                The project
-                                integrated multiple cutting-edge technologies and methodologies:
-                                <br>
-                            <ul>
-                                <li>
-                                    <b>Google Earth Engine:</b> Utilized for efficient storage and management of
-                                    extensive
-                                    geospatial
-                                    datasets.
-                                </li>
-                                <li>
-                                    <b>Hypothesis Testing:</b> Applied during the data pre-processing phase to
-                                    ensure
-                                    statistical
-                                    robustness.
-                                </li>
-                                <li>
-                                    <b>Machine Learning (Python):</b> Implemented to analyze data and predict
-                                    landslide
-                                    susceptibility
-                                    with high precision.
-                                </li>
-                                <li>
-                                    <b>Map Creation:</b> Generated detailed susceptibility maps using Google Earth
-                                    Engine,
-                                    based on the
-                                    refined data and machine learning results.
-                                </li>
-                            </ul>
-                            This research was recognized and presented at the National Conference of Machine
-                            Learning
-                            and Artificial Intelligence in October 2023, underscoring its significance and impact in
-                            the
-                            field.
-                            </p>
-                            <div class="container-fluid">
-                                <a class="btn btn-outline-info" href="#skill-3">Skills</a>
-                                <a class="btn-with-tooltip"
-                                    href="https://dcal.iimb.ac.in/NCMLAI-Trivandrum2023/pdf/Book%20of%20Abstracts.pdf">
-                                    <button class="btn btn-outline-info">
-                                        <b>NCMLAI:</b> <i><u>Book of Abstracts</u></i>
+                        <div class="certificates__links"></div>
+                        <dic class="col" style="width: 62%; display:none;">
+                            <!-- <h4 style="text-align: center;">Certifications</h4> -->
+                            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="card">
+                                            <!-- https://drive.google.com/file/d/1nDDvxd2TXKcAwbfjb2WQvYeb1pYMviJo/view?usp=sharing -->
+                                            <img class="certificate__img"
+                                                src="https://drive.google.com/thumbnail?id=1nDDvxd2TXKcAwbfjb2WQvYeb1pYMviJo&sz=w1000">
+                                            <div class="card-footer">
+                                                Docker Foundations Professional Certificate
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card">
+                                            <!-- https://drive.google.com/file/d/1pQuJKWFsHDoDMqaCN8fS1xNY4VVYeJMc/view?usp=drive_link -->
+                                            <img class="certificate__img"
+                                                src="https://drive.google.com/thumbnail?id=1pQuJKWFsHDoDMqaCN8fS1xNY4VVYeJMc&sz=w1000">
+                                            <div class="card-footer">
+                                                AI-Driven Data Analysis
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card">
+                                            <!-- https://drive.google.com/file/d/1N2JIRQJN0WAI3XmB6Vpp2TJNnGvwWM5l/view?usp=drive_link -->
+                                            <img class="certificate__img"
+                                                src="https://drive.google.com/thumbnail?id=1N2JIRQJN0WAI3XmB6Vpp2TJNnGvwWM5l&sz=w1000">
+                                            <div class="card-footer">
+                                                AI Productivity Hacks
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card">
+                                            <!-- https://drive.google.com/file/d/1AIQzWkoMZDI_SG-P7RVQ_juHkv7VwutA/view?usp=drive_link -->
+                                            <img class="certificate__img"
+                                                src="https://drive.google.com/thumbnail?id=1AIQzWkoMZDI_SG-P7RVQ_juHkv7VwutA&sz=w1000">
+                                            <div class="card-footer">
+                                                AWS: DynamoDB
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card">
+                                            <!-- https://drive.google.com/file/d/1BSk4lCEu0e0NHbV45dhQh3LdG3XIloWW/view?usp=drive_link -->
+                                            <img class="certificate__img"
+                                                src="https://drive.google.com/thumbnail?id=1BSk4lCEu0e0NHbV45dhQh3LdG3XIloWW&sz=w1000">
+                                            <div class="card-footer">
+                                                GenAI: Creative Content
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card">
+                                            <!-- https://drive.google.com/file/d/1GAebgJ16WnFmMOxbR2vi2FonklRc3T70/view?usp=drive_link -->
+                                            <img class="certificate__img"
+                                                src="https://drive.google.com/thumbnail?id=1GAebgJ16WnFmMOxbR2vi2FonklRc3T70&sz=w1000">
+                                            <div class="card-footer">
+                                                Docker: Introduction
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card">
+                                            <!-- https://drive.google.com/file/d/1sMtdVen27hvmZyD9iLkt8FRpPsOlU49i/view?usp=drive_link -->
+                                            <img class="certificate__img"
+                                                src="https://drive.google.com/thumbnail?id=1sMtdVen27hvmZyD9iLkt8FRpPsOlU49i&sz=w1000">
+                                            <div class="card-footer">
+                                                Prompt Engineering: Introduction
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card">
+                                            <!-- https://drive.google.com/file/d/1Q35HVIHAwo5oO0oK4MJ4oFL19l88UGyT/view?usp=drive_link -->
+                                            <img class="certificate__img"
+                                                src="https://drive.google.com/thumbnail?id=1Q35HVIHAwo5oO0oK4MJ4oFL19l88UGyT&sz=w1000">
+                                            <div class="card-footer">
+                                                Docker Compose
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card">
+                                            <!-- https://drive.google.com/file/d/1B7ztBXNIrspwzuox_F9rkaP4NhJU5-_A/view?usp=drive_link -->
+                                            <img class="certificate__img"
+                                                src="https://drive.google.com/thumbnail?id=1B7ztBXNIrspwzuox_F9rkaP4NhJU5-_A&sz=w1000">
+                                            <div class="card-footer">
+                                                Prompt to Presentation
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
                                     </button>
-                                </a>
-                                <div class="tooltip-content">
-                                    <ul>
-                                        <li>
-                                            <b>NCMLAI:</b> National Conference of Machine Learning and Artificial
-                                            Intelligence 2023
-                                        </li>
-                                        <li>
-                                            <b>Book of Abstracts:</b> <i>Page Number 61</i>
-                                        </li>
-                                    </ul>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
                                 </div>
-
-
                             </div>
-                        </div>
-                        <hr>
-                        <div id="item-4">
-                            <h4><u><i>Questionnaire Assessment</i></u></h4>
-                            <br>
-                            <h3>Cartogram Assessment Application | Streamlit, Python, No-SQL, Deta</h3>
-                            <br>
-                            <p>
-                                I developed and deployed a Cartogram Assessment application using Python and
-                                Streamlit,
-                                designed to evaluate which types of cartograms are most suitable for presenting
-                                spatial
-                                data in a way that is easily understandable by the general public. The application
-                                features a comprehensive questionnaire, and its modular design allows for
-                                independent
-                                generation of questions and corresponding image models.
-                                <br><br>
-                                Key technologies used include:
-                                <br>
-                            <ul>
-                                <li>
-                                    <b>Streamlit</b> for deployment.
-                                </li>
-                                <li>
-                                    <b>Deta (No-SQL)</b> for storing assessment data.
-                                </li>
-                                <li>
-                                    <b>Google Colab</b> for statistical analysis, generating Excel sheets from
-                                    collected
-                                    data.
-                                </li>
-                            </ul><br>
-                            This project highlights my ability to create scalable, data-driven applications for
-                            user-centric spatial data analysis.
-                            </p>
-                            <div class="container-fluid">
-                                <a class="btn btn-outline-info" href="#skill-4">Skills</a>
-                                <a class="btn btn-outline-info"
-                                    href="https://victoriousmango-cartogram-questio-cartogramassessmentapp-zo0znw.streamlit.app/">
-                                    Application Link
-                                </a>
-                                <a class="btn btn-outline-info"
-                                    href="https://github.com/VictoriousMango/cartogram_questionaire">Github Link</a>
+                        </dic>
+                        <dic class="col" style="width: 28%; display:none;">
+                            <!-- <h4 style="text-align: center;">Recommendations</h4> -->
+                            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="card">
+                                            <!-- https://drive.google.com/file/d/1MU1NDoPiIjWnPjKjAGFT0vz2d2W-IWZv/view?usp=drive_link -->
+                                            <img class="certificate__img"
+                                                src="https://drive.google.com/thumbnail?id=1MU1NDoPiIjWnPjKjAGFT0vz2d2W-IWZv&sz=w1000">
+                                            <div class="card-footer">
+                                                Freelance Work
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card">
+                                            <!-- https://drive.google.com/file/d/1R8C-dvOU5d3eU6K-VwZtS7XBJv9qC97P/view?usp=drive_link -->
+                                            <img class="certificate__img"
+                                                src="https://drive.google.com/thumbnail?id=1R8C-dvOU5d3eU6K-VwZtS7XBJv9qC97P&sz=w1000">
+                                            <div class="card-footer">
+                                                Internship at GE Appliances
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                        <hr>
+                        </dic>
                     </div>
                 </div>
-            </div>
-        </div>
-    </main>
 
-    <!-- Javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="..\assets\javascript\about.js"></script>
-    <script>
-        function Toggling() {
-            console.log("Clicked the toggle button")
-            console.log()
-            var element = document.body;
-            element.dataset.bsTheme = element.dataset.bsTheme == "dark" ? "light" : "dark"
-        }
-        const badgeRow = document.querySelector('.badge-container .badge-row');
-        const badgeRowContent = badgeRow.innerHTML;
-        badgeRow.innerHTML += badgeRowContent; // Duplicate content for seamless scrolling
-    </script>
+
+                <div class="achievements">
+                    <h1>Achievements</h1>
+                    <hr>
+                    <p style="color: gainsboro; opacity: 0.4;">Click on the project name for navigation.</p>
+                    <div id="list-example" class="list-group d-flex flex-row col-12 col-md-3 mb-3" style="width: 100%;">
+                        <a class="list-group-item list-group-item-action" href="#item-1">Mapathon Project</a>
+                        <a class="list-group-item list-group-item-action" href="#item-2">Freelance Project</a>
+                        <a class="list-group-item list-group-item-action" href="#item-3">Research Project</a>
+                        <a class="list-group-item list-group-item-action" href="#item-4">Questionnaire
+                            Assessment</a>
+                    </div>
+                    <div class="row"
+                        style="width: 100%; display: flex; flex-wrap: wrap; justify-content: space-evenly;">
+                        <div class="col-12 col-md-3 mb-3">
+
+                            <!-- <div class="skills">
+                                <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+                                    class="scrollspy-example-1" tabindex="0">
+                                    <div id="skill-1">
+                                        <h2>Mapathon Project skills</h2>
+                                        <ul>
+                                            <li>Geospatial Data Analysis</li>
+                                            <li>QGIS Software</li>
+                                            <li>Data Acquisition and Processing</li>
+                                            <li>Data Categorization and classification</li>
+                                            <li>Cartography</li>
+                                            <li>Data Visualization</li>
+                                        </ul>
+                                    </div>
+                                    <div id="skill-2">
+                                        <h2>Freelance Project skills</h2>
+                                        <ul>
+                                            <li>Python</li>
+                                            <li>Bootstrap</li>
+                                            <li>Jinja Template Engine</li>
+                                            <li>Flask SQL Alchemy</li>
+                                            <li>SQLlite Database</li>
+                                        </ul>
+                                    </div>
+                                    <div id="skill-3">
+                                        <h2>Research Project skills</h2>
+                                        <ul>
+                                            <li>Spatial Mapping</li>
+                                            <li>Google Earth Engine</li>
+                                            <li>Python</li>
+                                            <li>Statistical Analysis</li>
+                                            <li>Machine Learning</li>
+                                        </ul>
+                                    </div>
+                                    <div id="skill-4">
+                                        <h2>Questionnaire Assessment</h2>
+                                        <ul>
+                                            <li>Streamlit Mapping</li>
+                                            <li>Python</li>
+                                            <li>No-SQL Database Management (Deta)</li>
+                                            <li>Modular Application Design</li>
+                                            <li>Spatial Data Assessment</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+
+                        <div class="Achievement__card-group">
+                            <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+                                class="scrollspy-example-2" tabindex="0">
+                                <div id="item-1" class="Achievement__card" class="Achievement__card">
+                                    <div class="Achievement__card-description">
+                                        <h4><u><i>Mapathon Project</i></u></h4>
+                                        <br>
+                                        <h3>Electric Vehicle Adoption Map | QGIS, Data Acquisition, GIS Analysis</h3>
+                                        <br>
+                                        <p>
+                                            As part of the IIT Bombay FOSSEE Mapathon, I created an insightful map that
+                                            showcases
+                                            India's
+                                            efforts to promote electric vehicle adoption. This project integrated reliable
+                                            data
+                                            sources
+                                            such as:
+                                        </p>
+                                        <br>
+                                        <ul>
+                                            <li><b>Data from the Ministry of Heavy Industries:</b> Acquired from official
+                                                government
+                                                releases and processed into structured Excel sheets for further analysis.
+                                            </li>
+                                            <li>
+                                                <b>State Boundaries from Bhuvan:</b> Leveraged official boundary data to
+                                                ensure
+                                                geographical accuracy.
+                                            </li>
+                                        </ul>
+                                        <br>
+                                        <p>
+                                            Using QGIS, I developed four maps that help users:
+                                        </p>
+                                        <ul>
+                                            <li>Identify the best states for purchasing electric vehicles.</li>
+                                            <li>Determine optimal inter-state travel routes based on charger density.</li>
+                                            <li>Analyze the ongoing shift in the Indian automobile industry towards electric
+                                                vehicles.
+                                            </li>
+                                        </ul>
+                                        <p>
+                                            This project enhances decision-making in electric vehicle adoption by providing
+                                            practical
+                                            insights through comprehensive spatial data.
+                                        </p>
+                                        <div class="btn__group">
+                                            <!-- <a class="btn" href="#skill-1">Skills</a> -->
+                                            <a class="btn btn-outline-info"
+                                                href="https://www.linkedin.com/posts/thota-sivasankar-11197861_niit-gismapping-geospatial-activity-7074433395044286465-HHuj?utm_source=share&utm_medium=member_desktop">
+                                                Linked Post
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="Achievement__card-skills">
+                                        <h4>Skills</h4>
+                                        <hr>
+                                        <br>
+                                        <ul>
+                                            <li>Geospatial Data Analysis</li>
+                                            <li>QGIS Software</li>
+                                            <li>Data Acquisition and Processing</li>
+                                            <li>Data Categorization and Classification</li>
+                                            <li>Cartography</li>
+                                            <li>Data Visualization</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr class="Achievement__hr">
+                                <div id="item-2" class="Achievement__card">
+                                    <div class="Achievement__card-description">
+                                        <h4><u><i>Freelance Project</i></u></h4>
+                                        <br>
+                                        <h3>Efficient Billing Management System for a Law Firm | Flask, SQLite, Python</h3>
+                                        <br>
+                                        <p>
+                                            I developed a robust Flask-based web application for a law firm, streamlining
+                                            their
+                                            billing
+                                            processes and significantly reducing the time spent on managing financial
+                                            records.
+                                            Leveraging the Jinja template engine and Flask-SQL Alchemy, I connected the
+                                            application
+                                            to a
+                                            local SQLite database, enabling seamless data management and retrieval.
+                                            <br><br>
+                                            Key features include:
+                                            <br>
+                                        <ul>
+                                            <li><b>Bill Logging:</b> Automatically generates Google documents for bill
+                                                details
+                                                and
+                                                collects
+                                                additional expense data.
+                                            </li>
+                                            <li>
+                                                <b>Database Viewing and Sorting:</b> Allows users to view and sort billing
+                                                records
+                                                by
+                                                bank name or
+                                                bill generation time.
+                                            </li>
+                                            <li>
+                                                <b>Comprehensive Bill Generation:</b> Compiles bills from selected banks,
+                                                calculates
+                                                grand totals,
+                                                and enables easy download for records.
+                                            </li>
+                                            <li>
+                                                <b>User-Friendly Execution:</b> Simplified application launch through .bat
+                                                files,
+                                                making
+                                                it
+                                                accessible and easy to use for non-technical staff.
+                                            </li>
+                                        </ul><br>
+                                        This project empowered the law firm to efficiently manage and access their billing
+                                        data,
+                                        saving valuable time and resources.
+                                        </p>
+                                        <div class="btn__group">
+                                            <!-- <a class="btn btn-outline-info" href="#skill-2">Skills</a> -->
+                                            <a class="btn btn-outline-info"
+                                                href="https://drive.google.com/file/d/1MU1NDoPiIjWnPjKjAGFT0vz2d2W-IWZv/view?usp=sharing">
+                                                Letter of Recommendation
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="Achievement__card-skills">
+                                        <h4>Skills</h4>
+                                        <hr>
+                                        <br>
+                                        <ul>
+                                            <li>Python</li>
+                                            <li>Bootstrap</li>
+                                            <li>Jinja Template Engine</li>
+                                            <li>Flask SQL Alchemy</li>
+                                            <li>SQLite Database</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr class="Achievement__hr">
+                                <div id="item-3" class="Achievement__card">
+                                    <div class="Achievement__card-description">
+                                        <h4><u><i>Research Project</i></u></h4>
+                                        <br>
+                                        <h3>Landslide Susceptibility Mapping Algorithm | Google Earth Engine, Machine
+                                            Learning,
+                                            Python
+                                        </h3>
+                                        <br>
+                                        <p>
+                                            I developed an advanced Landslide Susceptibility Mapping algorithm designed to
+                                            minimize
+                                            creator subjectivity, providing more accurate and reliable susceptible area
+                                            identification.
+                                            The project
+                                            integrated multiple cutting-edge technologies and methodologies:
+                                            <br>
+                                        <ul>
+                                            <li>
+                                                <b>Google Earth Engine:</b> Utilized for efficient storage and management of
+                                                extensive
+                                                geospatial
+                                                datasets.
+                                            </li>
+                                            <li>
+                                                <b>Hypothesis Testing:</b> Applied during the data pre-processing phase to
+                                                ensure
+                                                statistical
+                                                robustness.
+                                            </li>
+                                            <li>
+                                                <b>Machine Learning (Python):</b> Implemented to analyze data and predict
+                                                landslide
+                                                susceptibility
+                                                with high precision.
+                                            </li>
+                                            <li>
+                                                <b>Map Creation:</b> Generated detailed susceptibility maps using Google
+                                                Earth
+                                                Engine,
+                                                based on the
+                                                refined data and machine learning results.
+                                            </li>
+                                        </ul>
+                                        This research was recognized and presented at the National Conference of Machine
+                                        Learning
+                                        and Artificial Intelligence in October 2023, underscoring its significance and
+                                        impact in
+                                        the
+                                        field.
+                                        </p>
+                                        <div class="btn__group">
+                                            <!-- <a class="btn btn-outline-info" href="#skill-3">Skills</a> -->
+                                            <a class="btn-with-tooltip"
+                                                href="https://dcal.iimb.ac.in/NCMLAI-Trivandrum2023/pdf/Book%20of%20Abstracts.pdf">
+                                                <button class="btn btn-outline-info">
+                                                    <b>NCMLAI:</b> <i><u>Book of Abstracts</u></i>
+                                                </button>
+                                            </a>
+                                            <div class="tooltip-content">
+                                                <ul>
+                                                    <li>
+                                                        <b>NCMLAI:</b> National Conference of Machine Learning and
+                                                        Artificial
+                                                        Intelligence 2023
+                                                    </li>
+                                                    <li>
+                                                        <b>Book of Abstracts:</b> <i>Page Number 61</i>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Achievement__card-skills">
+                                        <h4>Skills</h4>
+                                        <hr>
+                                        <br>
+                                        <ul>
+                                            <li>Spatial Mapping</li>
+                                            <li>Google Earth Engine</li>
+                                            <li>Python</li>
+                                            <li>Statistical Analysis</li>
+                                            <li>Machine Learning</li>
+                                        </ul>
+                                    </div>
+
+                                    
+                                </div>
+                                <hr class="Achievement__hr">
+                                <div id="item-4" class="Achievement__card">
+                                    <div class="Achievement__card-description">
+                                        <h4><u><i>Questionnaire Assessment</i></u></h4>
+                                        <br>
+                                        <h3>Cartogram Assessment Application | Streamlit, Python, No-SQL, Deta</h3>
+                                        <br>
+                                        <p>
+                                            I developed and deployed a Cartogram Assessment application using Python and
+                                            Streamlit,
+                                            designed to evaluate which types of cartograms are most suitable for presenting
+                                            spatial
+                                            data in a way that is easily understandable by the general public. The
+                                            application
+                                            features a comprehensive questionnaire, and its modular design allows for
+                                            independent
+                                            generation of questions and corresponding image models.
+                                            <br><br>
+                                            Key technologies used include:
+                                            <br>
+                                        <ul>
+                                            <li>
+                                                <b>Streamlit</b> for deployment.
+                                            </li>
+                                            <li>
+                                                <b>Deta (No-SQL)</b> for storing assessment data.
+                                            </li>
+                                            <li>
+                                                <b>Google Colab</b> for statistical analysis, generating Excel sheets from
+                                                collected
+                                                data.
+                                            </li>
+                                        </ul><br>
+                                        This project highlights my ability to create scalable, data-driven applications for
+                                        user-centric spatial data analysis.
+                                        </p>
+                                        <div class="btn__group">
+                                            <!-- <a class="btn btn-outline-info" href="#skill-4">Skills</a> -->
+                                            <a class="btn btn-outline-info"
+                                                href="https://victoriousmango-cartogram-questio-cartogramassessmentapp-zo0znw.streamlit.app/">
+                                                Application Link
+                                            </a>
+                                            <a class="btn btn-outline-info"
+                                                href="https://github.com/VictoriousMango/cartogram_questionaire">Github
+                                                Link</a>
+                                        </div>
+                                    </div>
+                                    <div class="Achievement__card-skills">
+                                        <h4>Skills</h4>
+                                        <hr>
+                                        <br>
+                                        <ul>
+                                            <li>Streamlit Mapping</li>
+                                            <li>Python</li>
+                                            <li>No-SQL Database Management (Deta)</li>
+                                            <li>Modular Application Design</li>
+                                            <li>Spatial Data Assessment</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr class="Achievement__hr">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Additya. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/About.js"></script>
 </body>
 
 </html>

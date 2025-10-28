@@ -1,0 +1,343 @@
+/* Root Variables */
+:root {
+    /* Portfolio Theme Colors (Default for Screen) */
+    --bg-color: #121212; /* Deep Black */
+    --text-color: #f5c518; /* Rich Gold */
+    --secondary-text: #c4a000; /* Deeper Gold */
+    --accent-color: #6A0DAD; /* Lightened Royal Cosmos Purple */
+    --card-bg: #1e1e1e; /* Dark Gray */
+    --hover-glow: 0 0 15px var(--text-color), 0 0 30px var(--accent-color);
+    --border-color: #8d6c09; /* Muted Gold */
+    --about-border-color_1: #4a90e2; /* Gradient color */
+    --about-border-color_2: #f9d641; /* Gradient color */
+    --about-border-color: linear-gradient(90deg, #4a90e2, #f9d641); /* Gradient color */
+
+    --nav-grey: #cccccc; /* Light Gray */
+
+    /* Resume Theme (Active for Both Screen & Print) */
+    --resume-bg: #f7f9fc; /* Deep Black */
+    --resume-card-bg: #ffffff; /* Dark Gray */
+    --resume-text: #333333; /* Gold Text */
+    --resume-accent: #0078d4; /* Royal Cosmos Purple */
+    --resume-border: #cccccc; /* Muted Gold */
+    --resume-hover-glow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    --hover-scale: 1.005;
+
+    /* Resume Theme for Print Mode (Only Applied in Print) */
+    --print-bg: #f7f9fc; /* Light Gray */
+    --print-card-bg: #ffffff; /* White */
+    --print-text: #333333; /* Dark Gray */
+    --print-accent: #0078d4; /* Formal Blue */
+    --print-border: #cccccc; /* Light Gray */
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    height: 87vh;
+}
+
+/* Main Layout */
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+    height: inherit;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--card-bg);
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    height: 101%;
+    width: 20%;
+}
+.content {
+    width: 70%;
+    height: 100%;
+    overflow: auto;
+    scrollbar-width: none;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--text-color);
+    text-transform: uppercase;
+    border-bottom: solid 2px var(--nav-grey);
+    padding-bottom: 10px;
+}
+
+/* Navigation Menu */
+nav ul {
+    margin-top: 50px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+nav ul li {
+    width: 90%;
+    text-align: center;
+}
+
+/* Navigation Buttons */
+.nav-link {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    background: transparent;
+    border: 2px solid var(--nav-grey);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link.active {
+    background: var(--text-color);
+    color: var(--bg-color);
+    transition: all 0.3s ease-in-out;
+}
+.nav-link.active:hover {
+    box-shadow: 0 0 15px var(--text-color);
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    box-shadow: 0 0 15px var(--text-color);
+}
+
+
+/* Hero Section */
+#hero  {
+    background: linear-gradient(135deg, var(--card-bg), var(--accent-color));
+    text-align: center;
+    padding: 100px 20px;
+    box-shadow: var(--hover-glow);
+    height: 100%;
+    overflow-y: auto;
+    scrollbar-width:none;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 10px var(--text-color);
+}
+
+#hero p {
+    font-size: 1.5rem;
+    color: var(--secondary-text);
+}
+
+.hero__container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: inherit;
+    height: inherit;
+}
+.hero__left {
+    height: inherit;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: inherit;
+}
+.hero__left img {
+    mix-blend-mode: light;
+    box-shadow: var(--hover-glow);
+    height: 90%;
+}
+.hero__right {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin-left: 2%;
+}
+#element {
+    display:block;
+    /* justify-content: left; */
+}
+
+.hero__skills {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    gap: 20px;
+    margin-top: 50px;
+    width: 50%;
+    overflow-x: scroll;
+    scrollbar-width: None;
+}
+.hero__skill-card {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 50px;
+}
+.hero__skill-card:hover {
+    box-shadow: var(--hover-glow);
+}
+
+/* Sections */
+.section {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Show active section */
+.section.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--card-bg);
+    color: var(--text-color);
+    margin-top: 50px;
+}
+
+/* ✨ PRINT-FRIENDLY STYLES ✨ */
+@media print {
+    /* Switch to Resume Theme in Print Mode */
+    :root {
+        --bg-color: var(--print-bg);
+        --text-color: var(--print-text);
+        --card-bg: var(--print-card-bg);
+        --resume-bg: var(--print-bg);
+        --resume-card-bg: var(--print-card-bg);
+        --resume-text: var(--print-text);
+        --resume-accent: var(--print-accent);
+        --resume-border: var(--print-border);
+    }
+
+    .section.active {
+        width: 100%;
+    }
+
+    /* Hide Navbar & Footer */
+    nav,
+    footer {
+        display: none;
+    }
+
+    /* Remove Hover Effects & Neon Glow */
+    .card,
+    .card:hover {
+        height:auto;
+        transform: none;
+        box-shadow: none;
+        border: 0px;
+        background-color: inherit;
+    }
+
+    /* Reset Layout for Full-Width Printing */
+    .resume-content {
+        display: flex;
+        flex-direction: row;
+        width: 100%; /* Full width */
+        height: 100vh;
+        justify-content:start;
+        gap: 0px;
+    }
+
+    /* Ensure Resume Container Uses Full Page */
+    #resume {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        padding: 0px;
+    }
+    .container {
+        /* max-width: 100%; */
+        width: inherit; /* Full width */
+        padding: 10px; /* Reduce excessive padding */
+        padding-top: 50px;
+        box-shadow: none;
+        /* background-color: red; */
+    }
+    /* .left-column {
+        border-right: ;
+    } */
+
+    /* Adjust Text for Printing */
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+        color: rgb(65, 64, 64);
+    }
+
+    .card h2 {
+        border-bottom: 2px solid var(--resume-border);
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        height: 100vh;
+    }
+    .main {
+        flex-direction: column;
+        /* align-items:s; */
+    }
+    nav {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    nav ul {
+        flex-direction: row;
+        overflow-x: auto;
+        margin-top: 5%;
+    }
+    .content {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .hero__container {
+        flex-direction: column;
+    }
+    .hero__left, .hero__right {
+        width: inherit;
+    }
+}
