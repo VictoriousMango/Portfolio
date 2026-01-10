@@ -83,3 +83,74 @@ nextButton.addEventListener('click', () => {
 
 // Initial state
 resetToWelcome();
+
+/* =========================================================
+   BADGE CAROUSEL (Circular Queue, Infinite)
+========================================================= */
+
+const badgeTrack = document.getElementById("view");
+const badgeCards = Array.from(badgeTrack.querySelectorAll(".card"));
+
+let activeIndex = 0;
+let autoplayTimer = null;
+const AUTOPLAY_DELAY = 2500;
+
+/* -----------------------------
+   Helpers
+----------------------------- */
+
+// Scroll a given card to the visual center
+function centerCard(index) {
+    const trackRect = badgeTrack.getBoundingClientRect();
+    const cardRect = badgeCards[index].getBoundingClientRect();
+
+    const delta =
+        cardRect.left +
+        cardRect.width / 2 -
+        (trackRect.left + trackRect.width / 2);
+
+    badgeTrack.scrollBy({ left: delta, behavior: "smooth" });
+}
+
+// Update glow / highlight
+function highlightActiveCard() {
+    badgeCards.forEach(card => card.classList.remove("active"));
+    badgeCards[activeIndex].classList.add("active");
+}
+
+/* -----------------------------
+   Circular Queue Logic
+----------------------------- */
+
+function moveToNextCard() {
+    activeIndex = (activeIndex + 1) % badgeCards.length;
+    centerCard(activeIndex);
+    highlightActiveCard();
+}
+
+/* -----------------------------
+   Autoplay Control
+----------------------------- */
+
+function startAutoplay() {
+    autoplayTimer = setInterval(moveToNextCard, AUTOPLAY_DELAY);
+}
+
+function stopAutoplay() {
+    clearInterval(autoplayTimer);
+}
+
+/* -----------------------------
+   User Interaction
+----------------------------- */
+
+badgeTrack.addEventListener("mouseenter", stopAutoplay);
+badgeTrack.addEventListener("mouseleave", startAutoplay);
+
+/* -----------------------------
+   Init
+----------------------------- */
+
+centerCard(activeIndex);
+highlightActiveCard();
+startAutoplay();
