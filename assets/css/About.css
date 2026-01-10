@@ -173,7 +173,14 @@ h1 {
   
   .badge-container .badge-row {
     display: flex;
-    animation: scroll-left 20s linear infinite; /* Smooth scrolling */
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    /* animation: scroll-left 20s linear infinite; Smooth scrolling */
+  }
+  .badge-row::-webkit-scrollbar {
+    display: none;
   }
   
   .badge-container .badge-col {
@@ -182,16 +189,28 @@ h1 {
   }
   
   .badge-container .card {
-    width: fit-content;
+    margin: 7px;
+    padding: 7px;
+    width: 150px;
     border-radius: 10px;
     border: none;
     background-color: rgba(0, 0, 0, 0);
     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
     text-align: center;
+    scroll-snap-align: center;
+    opacity: 0.5;
+    transition: all ease-in-out 0.5s;
+}
+.card.active {
+    opacity: 1;
+    box-shadow: 0 0 20px wheat;
   }
+  .spacer {
+        flex: 0 0 50%;
+    }
   
-  .badge-container .card:hover {
-    transform: scale(1.1);
+  .badge-container .badge-row .card:hover {
+    transform: scale(1.05);
     transition: transform 0.3s ease;
   }
 ul {
