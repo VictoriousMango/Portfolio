@@ -2,10 +2,30 @@ console.log("About.js loaded successfully");
 
 // Milestones data
 const milestones = [
-    { title: "Docker Foundations", content: "Learned Docker fundamentals and containerization techniques." },
-    { title: "Freelance Work", content: "Developed projects using Flask, Python, and various web technologies." },
-    { title: "Hackathon Win", content: "Winner for ML Track in HackGDSC, and secured the position of second runner-up in the the entire HackGDSC hackathon" },
-    { title: "BTech Graduation", content: "Completed my BTech, and became a Computer Science graduate, with good amount of skills, experience, and exposure to different technologies." }
+    { 
+        title: "BTech – Computer Science Foundation", 
+        content: "Built strong fundamentals in Data Structures, Algorithms, Operating Systems, and core software engineering principles. Developed projects in Machine Learning and Computer Vision, combining theory with implementation." 
+    },
+    { 
+        title: "Minor in Business Analytics – Data-Driven Thinking", 
+        content: "Gained structured understanding of data analysis, statistical modeling, and business intelligence. Worked with real-world datasets to derive insights, strengthening analytical reasoning and decision-making skills." 
+    },
+    { 
+        title: "Freelance Projects – Real-World Problem Solving", 
+        content: "Delivered end-to-end solutions using Python, Flask, and modern web technologies. Translated client requirements into scalable applications, improving system design, deployment, and debugging capabilities." 
+    },
+    { 
+        title: "GE Appliances – Industry Experience", 
+        content: "Worked in a professional engineering environment, understanding enterprise-scale systems, collaborative workflows, and production-level problem solving." 
+    },
+    { 
+        title: "MTech – Optical Engineering & Advanced AI", 
+        content: "Deepened expertise in Computer Vision, Adaptive Optics, and advanced Machine Learning. Focused on mathematical rigor, research thinking, and implementation of complex systems such as SLAM and deep learning models." 
+    },
+    { 
+        title: "LEOS Project Traineeship – Research & Innovation", 
+        content: "Contributed to technically demanding projects requiring precision, modeling, and analytical depth. Applied computational methods to solve domain-specific engineering challenges." 
+    }
 ];
 
 // Elements

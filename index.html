@@ -58,11 +58,15 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-            strings: ["I'm a <b>BTech</b> in <i><u>Computer Science Engineering</u></i> graduate with <b>Minors</b> in <i><u>Business Analytics</u></i>, driven by a passion for innovation across fields. With a blend of technical expertise and business insight, I excel at crafting solutions from machine learning models to dynamic web applications."],
+            strings: [
+                "BTech in <b>Computer Science Engineering</b> with Minors in <b>Business Analytics</b>, building projects across machine learning, image processing, web systems, embedded development, data analysis, and GIS.",
+                
+                "MTech in <b>Optical Engineering</b>, studying Adaptive Optics, Optical System Design, and Lasers, while developing strong expertise in <b>Deep Learning and Computer Vision</b>."
+            ],
             typeSpeed: 15,
-            loop: false,
+            loop: true,
             backSpeed: 25,
-            backDelay: 2000
+            backDelay: 5000
         });
         var typed = new Typed('#hero__skills', {
             strings: ["Web Developer", "Python Developer", "Flask Developer", "Streamlit Developer", "Business Analyst", "ML Engineer", "Data Scientist"],
