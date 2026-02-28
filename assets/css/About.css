@@ -400,7 +400,7 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Default for Computer */
     grid-template-rows: auto; /* Allow content to grow based on height */
-    height: 75vh;
+    height: 70vh;
     width: 100%;
 }
 
@@ -465,26 +465,89 @@ ul {
 }
 
 .milestone-content {
+    position: relative;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #ffcc00; /* Initially set to sun color */
-    color: black;
+
     width: 100%;
     height: 100%;
-    transition: background-color 0.5s ease, color 0.5s ease;
+
+    padding: 40px;
+    border-radius: 14px;
+
+    color: white;
+
+    overflow-y: auto;
+    scrollbar-width: thin;
+
+    transition: background 0.5s ease;
+}
+
+/* Translucent black overlay */
+.milestone-content::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55); /* adjust 0.45–0.65 */
+    backdrop-filter: blur(6px);
+    border-radius: inherit;
+    z-index: 0;
+}
+
+/* Keep text above overlay */
+.milestone-content > * {
+    position: relative;
+    z-index: 1;
 }
 
 .milestone-content h2 {
+    color: white;
+    text-align: center;
+    padding: 5%;
+    height: 100%;
+
+    text-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.6),
+        0 0 6px rgba(0, 255, 255, 0.25);
     font-size: 24px;
     margin-bottom: 10px;
 }
 
 .milestone-content p {
+    color: white;
+    text-align: center;
+    padding: 5%;
+    height: 100%;
+
+    text-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.6),
+        0 0 6px rgba(0, 255, 255, 0.25);
     font-size: 18px;
 }
 
+.milestone-title, 
+.milestone-text {
+    color: white;
+    text-align: center;
+    padding: 5%;
+    height: 100%;
+
+    text-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.6),
+        0 0 6px rgba(0, 255, 255, 0.25);
+}
+.timeline-indicator {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+
+    font-size: 14px;
+    opacity: 0.8;
+    letter-spacing: 1px;
+}
 .nav-buttons {
     margin-top: 20px;
     position: absolute;
@@ -506,58 +569,269 @@ ul {
     cursor: not-allowed;
 }
 
-/* Media Query for Mobile Screens */
-@media (max-width: 600px) {
-    /* Achievements */
-    .achievements .row {
-        flex-direction: column-reverse;
-    }
-    .scrollspy-example-1,
-    .scrollspy-example-2 {
-        height: auto;
-        max-height: 200px;
-    }
+/* ======================================
+   COSMIC CERTIFICATES SYSTEM
+====================================== */
 
-    h1, h2, h3, h4, p, li {
-        font-size: smaller;
-    }
+/* ==========================================
+   CERTIFICATES FLIP CARD SYSTEM
+========================================== */
 
-    ul {
-        padding-left: 15px;
-        line-height: 1.5;
-    }
+.certificates__cosmic {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
 
+/* Guide Text */
+.flip-guide {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.7);
+    animation: pulseGuide 2.5s ease-in-out infinite;
+}
 
-    .btn {
-        font-size: 0.9em;
-    }
-    /* Certificates */
-    .carousel {
-        padding-left: 0;
-        padding-right: 0;
-    }
+@keyframes pulseGuide {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
 
-    .milestones {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        height: auto;
-        width: 100% !important;
-    }
+/* Flip Card */
+.flip-card {
+    width: 260px;
+    height: 260px;
+    perspective: 1200px;
+    cursor: pointer;
+}
 
-    .section {
-        width: 100%;
-        height: 175px;
-    }
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+}
 
-    .milestone-content {
-        width: 100%;
-        height: auto;
-    }
-    .nav-button{
-        margin: 0;
-        padding: 0;
-        height: 30px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Front & Back */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Front */
+.recommendation-node {
+    background: radial-gradient(circle, #ffe066, #ff9900);
+    box-shadow: 0 0 35px rgba(255, 153, 0, 0.6);
+}
+
+.certificate-node {
+    background: radial-gradient(circle, #00d4ff, #005eff);
+    box-shadow: 0 0 35px rgba(0, 94, 255, 0.6);
+}
+
+.cosmic-core {
+    background: rgba(0,0,0,0.65);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+/* Flip Hint */
+.flip-hint {
+    margin-top: 12px;
+    font-size: 13px;
+    opacity: 0.6;
+    transition: 0.3s ease;
+}
+
+.flip-card:hover .flip-hint {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Back */
+.flip-card-back {
+    transform: rotateY(180deg);
+    background: rgba(15, 15, 20, 0.95);
+    backdrop-filter: blur(6px);
+    color: white;
+    padding: 25px;
+    flex-direction: column;
+    text-align: center;
+    overflow-y: auto;
+}
+
+.flip-card-back ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.flip-card-back li {
+    margin-bottom: 10px;
+}
+
+.flip-card-back a {
+    text-decoration: none;
+    color: #00d4ff;
+    transition: 0.2s ease;
+}
+
+.flip-card-back a:hover {
+    color: white;
+}
+
+.linkedin-more {
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+/* One-Time Nudge Animation */
+.flip-card.nudge .flip-card-inner {
+    animation: nudgeFlip 1.2s ease-in-out;
+}
+
+@keyframes nudgeFlip {
+    0%   { transform: rotateY(0deg); }
+    30%  { transform: rotateY(15deg); }
+    60%  { transform: rotateY(-10deg); }
+    100% { transform: rotateY(0deg); }
+}
+/* ==========================================
+   ACHIEVEMENTS – MISSION CARD SYSTEM
+========================================== */
+
+.achievements {
+    margin-top: 70px;
+}
+
+.achievements-guide {
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 35px;
+    letter-spacing: 1px;
+}
+
+/* Grid Layout */
+.missions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+/* Mission Card */
+.mission-card {
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(6px);
+    border-radius: 22px;
+    padding: 25px;
+    cursor: pointer;
+    transition: all 0.35s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Subtle hover glow */
+.mission-card:hover {
+    box-shadow: 0 0 35px rgba(0, 255, 255, 0.18);
+    transform: translateY(-4px);
+}
+
+/* Expanded state */
+.mission-card.expanded {
+    box-shadow: 0 0 45px rgba(0, 255, 255, 0.3);
+}
+
+/* Front Section */
+.mission-front h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.mission-subtitle {
+    font-size: 14px;
+    opacity: 0.75;
+    margin-bottom: 15px;
+}
+
+/* Preview Tech Tags */
+.mission-tech span {
+    display: inline-block;
+    padding: 5px 12px;
+    margin: 4px 4px 0 0;
+    border-radius: 20px;
+    font-size: 12px;
+    background: rgba(255,255,255,0.1);
+}
+
+/* Hidden Detailed Section */
+.mission-details {
+    margin-top: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+/* Expanded animation */
+.mission-card.expanded .mission-details {
+    max-height: 1000px;
+}
+
+/* Description */
+.mission-description {
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Skills */
+.mission-skills {
+    margin-bottom: 18px;
+}
+
+.mission-skills span {
+    display: inline-block;
+    padding: 6px 14px;
+    margin: 5px;
+    border-radius: 25px;
+    background: rgba(255,255,255,0.12);
+    font-size: 12px;
+    transition: 0.2s ease;
+}
+
+.mission-skills span:hover {
+    background: rgba(0, 212, 255, 0.3);
+}
+
+/* Links */
+.mission-links a {
+    text-decoration: none;
+    color: #00d4ff;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.mission-links a:hover {
+    color: white;
 }
