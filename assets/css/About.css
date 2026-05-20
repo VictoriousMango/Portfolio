@@ -835,3 +835,138 @@ ul {
 .mission-links a:hover {
     color: white;
 }
+
+/* Responsive Styles for Mobile and Tablets */
+@media (max-width: 768px) {
+    /* Global Headings */
+    h1 {
+        font-size: 1.8rem !important;
+        margin-top: 15px;
+    }
+    
+    hr {
+        width: 100%; /* Make horizontal rule full width on mobile */
+    }
+
+    /* Milestones Section */
+    .milestones {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto auto !important;
+        height: auto !important;
+        min-height: unset !important;
+    }
+
+    .milestones .section {
+        height: 320px !important; /* Allocate specific height for solar system layout */
+        position: relative !important;
+        justify-content: flex-start !important;
+    }
+
+    .solar-system {
+        top: 40% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) scale(0.75) !important;
+    }
+
+    /* Custom rotation for mobile to preserve the scale */
+    @keyframes rotate-mobile {
+        from {
+            transform: translate(-50%, -50%) scale(0.75) rotate(0deg);
+        }
+        to {
+            transform: translate(-50%, -50%) scale(0.75) rotate(360deg);
+        }
+    }
+
+    .solar-system {
+        animation: rotate-mobile 30s infinite linear !important;
+    }
+
+    .nav-buttons {
+        margin-top: 10px !important;
+        bottom: 10px !important;
+        position: absolute !important;
+    }
+
+    .milestone-content {
+        height: auto !important;
+        padding: 20px !important;
+        min-height: 200px !important;
+    }
+
+    .milestone-content h2 {
+        font-size: 1.5rem !important;
+        height: auto !important;
+        padding: 10px 0 !important;
+    }
+
+    .milestone-content p {
+        font-size: 1.0rem !important;
+        height: auto !important;
+        padding: 10px 0 !important;
+    }
+
+    /* Certifications & Recommendations Section */
+    .certificates {
+        height: auto !important; /* Let container resize dynamically to fit wrapped cards */
+        min-height: unset !important;
+        padding-bottom: 20px !important;
+    }
+
+    .certificates__cosmic {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 30px !important;
+        margin-top: 20px !important;
+    }
+
+    .flip-card {
+        width: 250px !important;
+        height: 250px !important;
+    }
+
+    .cosmic-core {
+        padding: 15px !important;
+    }
+
+    .cosmic-core h3 {
+        font-size: 16px !important;
+    }
+
+    .cosmic-core p {
+        font-size: 13px !important;
+    }
+
+    .flip-hint {
+        font-size: 12px !important;
+        margin-top: 8px !important;
+    }
+
+    .flip-card-back {
+        padding: 20px !important;
+        border-radius: 16px !important; /* Rounded rectangular shape for back card to fit content cleanly */
+        box-shadow: 0 0 25px rgba(0, 212, 255, 0.3) !important;
+    }
+
+    .flip-card-back ul {
+        width: 100% !important;
+    }
+
+    .flip-card-back li {
+        font-size: 12px !important;
+        margin-bottom: 10px !important;
+        line-height: 1.4 !important;
+    }
+
+    .flip-card-back a {
+        font-size: 12px !important;
+    }
+
+    .linkedin-more {
+        margin-top: 10px !important;
+    }
+
+    .linkedin-more a {
+        font-size: 12px !important;
+    }
+}
