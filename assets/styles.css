@@ -155,8 +155,8 @@ section {
     align-items: flex-end;
     gap: 40px;
     flex-wrap: wrap;
-
-    padding: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     background: linear-gradient(to bottom,
             #2a1d12,
@@ -572,4 +572,114 @@ section {
     padding: 6px 10px;
     border-radius: 20px;
     font-size: .8rem;
+}
+
+/* ================================= */
+/* MOBILE HERO CARD */
+/* ================================= */
+
+@media (max-width: 768px) {
+
+    .profile-card {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .profile-image {
+
+        min-width: auto;
+
+        width: 100%;
+
+        padding: 25px 25px 10px;
+    }
+
+    .profile-image img {
+
+        width: 180px;
+
+        height: 180px;
+    }
+
+    .profile-content {
+
+        padding: 15px 25px 30px;
+    }
+
+    .profile-content h1 {
+
+        font-size: 1.8rem;
+
+        margin-bottom: 10px;
+    }
+
+    .profile-content h3 {
+
+        font-size: 1rem;
+
+        line-height: 1.5;
+
+        margin-bottom: 15px;
+    }
+
+    .quick-links {
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 12px;
+
+        margin-top: 20px;
+    }
+
+    .quick-links a {
+
+        margin-right: 0;
+
+        display: block;
+    }
+    .timeline {
+        padding-left: 5px;
+    }
+
+    /* Showcase shelf on mobile */
+    .showcase-shelf {
+        gap: 25px;
+        padding: 30px 15px;
+        border-radius: 14px;
+    }
+
+    .shelf-slot {
+        width: 130px;
+        height: 190px;
+    }
+
+    .badge-holder {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .certificate-holder {
+        width: 110px;
+        height: 90px;
+    }
+
+    .pedestal {
+        width: 90px;
+        height: 32px;
+        font-size: .75rem;
+        text-align: center;
+        padding: 0 6px;
+    }
+
+    .shelf-title {
+        font-size: 1.6rem;
+        margin-bottom: 25px;
+    }
 }
