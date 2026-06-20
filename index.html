@@ -1,84 +1,889 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Additya's Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/Portfolio.css">
+    <title>Additya Portfolio</title>
+    <link rel="stylesheet" href="./assets/styles.css">
 </head>
 
 <body>
-    <div class="main">
-        <!-- Navigation Bar -->
-        <nav>
-            <div class="brand">Additya's Portfolio</div>
-            <ul>
-                <li><a href="./index.html" class="nav-link active">Home</a></li>
-                <li><a href="./pages/About.html" class="nav-link">About</a></li>
-                <li><a href="./pages/Projects.html" class="nav-link">Projects</a></li>
-                <li><a href="./pages/Resume.html"  target = "_blank" class="nav-link">Digital Resume</a></li>
-                <!-- <li><a href="./pages/Contacts.html" class="nav-link">Contact</a></li> -->
-            </ul>
-        </nav>
 
-        <!-- Content Sections -->
-        <div class="content">
-            <section id="hero" class="section active">
-                <h1><u>Hi, I am Additya</u></h1>
-                <h3 style="display: flex; flex-direction: row; justify-content: center; align-items: center;"> Having experience working as : <div id="hero__skills"></div></h3>
-                <div class="hero__container">
-                    <div class="hero__left">
-                        <img src="./assets/img/Additya_PassportSizePhoto_2024.jpg" alt="">
-                    </div>
-                    <div class="hero__right">
-                        <p><span id="element"></span></p>
-                        <!-- <div class="hero__skills">
-                            <div class="hero__skill-card">Web Developer</div>
-                            <div class="hero__skill-card">Python Developer</div>
-                            <div class="hero__skill-card">Flask Developer</div>
-                            <div class="hero__skill-card">Streamlit Developer</div>
-                            <div class="hero__skill-card">Business Analyst</div>
-                            <div class="hero__skill-card">ML Engineer</div>
-                            <div class="hero__skill-card">Data Scientist</div>
-                        </div> -->
-                    </div>
-                    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="./pages/badges.html">Badges</a>
+        <a href="./pages/LoR.html">LoR</a>
+    </nav>
+
+    <section class="hero">
+        <div class="profile-card">
+            <div class="profile-image">
+                <img src="https://media.licdn.com/dms/image/v2/D5603AQG4OrGrn3uFwA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721743164533?e=1783555200&v=beta&t=sEmDWDYC_7lyeqnpW7JmrlCJO7WXGia_hnXfYQiGjkY"
+                    alt="">
+            </div>
+
+            <div class="profile-content">
+                <h1>Additya Akash Mishra</h1>
+                <h3>Python & AI/ML Enthusiast | Machine Learning • Data Visualization • Generative AI • Computer Vision • AWS</h3>
+
+                <p>
+                    1.25 years of internship experience at ISRO and GE Appliances. Skilled in backend development (Flask, FastAPI), REST APIs, AWS (S3, DynamoDB) and OOPs. Delivered production-grade automation and data systems in live enterprise environments.
+                </p>
+                <br>
+                <div class="quick-links">
+                    <a href="./pages/badges.html">🏅 Badges</a>
+                    <a href="./pages/LoR.html">📜 Letter of Recommendations</a>
+                    <a href="#profiles">🌐 Online Profiles</a>
                 </div>
-            </section>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Additya. All Rights Reserved.</p>
-    </footer>
+    <section>
 
-    <!-- JavaScript -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: [
-                "BTech in <b>Computer Science Engineering</b> with Minors in <b>Business Analytics</b>, building projects across machine learning, image processing, web systems, embedded development, data analysis, and GIS.",
+        <h2>Journey</h2>
+
+        <div class="timeline">
+
+            <!-- ======================= -->
+            <!-- B.TECH -->
+            <!-- ======================= -->
+
+            <div class="journey-card">
+
+                <div class="inner-line"></div>
+
+                <div class="journey-header">
+
+                    <h3>
+                        Bachelor of Technology in Computer Science and Engineering
+                        <br>
+                        <small>NIIT University</small>
+                    </h3>
+
+                    <span>2020 - 2024</span>
+
+                </div>
+
+                <div class="journey-scroll">
+
+                    <!-- BTECH -->
+
+                    <div class="flip-card">
+
+                        <div class="flip-card-inner">
+
+                            <div class="flip-card-front">
+
+                                <img class="flip-logo" style="width: 100%;"
+                                    src="https://niituniversity.in/wp-content/uploads/2023/01/NU-logo.webp">
+
+                                <h4>B.Tech Computer Science and Engineering</h4>
+
+                                <span class="card-date">
+                                    2020 - 2024
+                                </span>
+
+                                <div class="card-tags">
+
+                                    <span>Python</span>
+                                    <span>DSA</span>
+                                    <span>Software Engineering</span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="flip-card-back">
+
+                                <h4>Bachelor of Technology</h4>
+
+                                <p>
+                                    Bachelor of Technology in Computer Science and
+                                    Engineering from NIIT University.
+
+                                    Focused on Software Engineering,
+                                    Data Structures,
+                                    Algorithms,
+                                    Databases,
+                                    and Machine Learning fundamentals.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- MINOR -->
+
+                    <div class="flip-card">
+
+                        <div class="flip-card-inner">
+
+                            <div class="flip-card-front">
+
+                                <img class="flip-logo" style="width: 100%;" src="https://niituniversity.in/wp-content/uploads/2023/01/NU-logo.webp">
+
+                                <h4>Minor Program in Business Analytics</h4>
+
+                                <span class="card-date">
+                                    2022 - 2024
+                                </span>
+
+                                <div class="card-tags">
+
+                                    <span>Analytics</span>
+                                    <span>Statistics</span>
+                                    <span>Visualization</span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="flip-card-back">
+
+                                <h4>Business Analytics</h4>
+
+                                <p>
+                                    Minor specialization focused on Business Analytics,
+                                    Statistical Analysis,
+                                    Data Visualization,
+                                    and Data-Driven Decision Making.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- GE -->
+
+                    <div class="flip-card">
+
+                        <div class="flip-card-inner">
+
+                            <div class="flip-card-front">
+
+                                <img class="flip-logo" style="width: 100%; background-color: white;"
+                                    src="https://cdn11.bigcommerce.com/s-ikiuocf6r8/content/global/logo-blue.svg">
+
+                                <h4>GE Appliances, a Haier Company</h4>
+
+                                <span class="card-date">
+                                    Jan 2024 - Jul 2024
+                                </span>
+
+                                <div class="card-tags">
+
+                                    <span>Python</span>
+                                    <span>AWS</span>
+                                    <span>DynamoDB</span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="flip-card-back">
+
+                                <h4>Digital Technology Intern</h4>
+
+                                <p>
+                                    Worked on DynamoDB automation,
+                                    authentication enhancement,
+                                    and production issue resolution
+                                    for smart home systems.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- UNDERSTANDING DATA -->
+
+                    <div class="flip-card">
+
+                        <div class="flip-card-inner">
+
+                            <div class="flip-card-front">
+
+                                <img class="flip-logo" src="https://dcal.iimb.ac.in/NCMLAI-Trivandrum2023/images/Combined%20Logo.png" style="width: 100%; background-color: white;">
+
+                                <h4>National Conference of Machine Learning and Artificial Intelligence</h4>
+
+                                <span class="card-date">
+                                   October 2023
+                                </span>
+
+                                <div class="card-tags">
+                                    <span>Python</span>
+                                    <span>Machine Learning</span>
+                                    <span>Analytics</span>
+                                    <span>Statistics</span>
+                                    <span>Hypothesis Testing</span>
+                                    <span>Geographic Information Systems</span>
+                                    <span>Google Earth Engine</span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="flip-card-back">
+
+                                <h4>Landslide Susceptibility Mapping using Machine Learning</h4>
+
+                                <p>
+                                    Developed a data analysis platform supporting
+                                    descriptive statistics,
+                                    correlation analysis,
+                                    VIF analysis,
+                                    visualization,
+                                    and machine learning workflows.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ======================= -->
+            <!-- M.TECH -->
+            <!-- ======================= -->
+
+            <div class="journey-card">
+
+                <div class="inner-line"></div>
+
+                <div class="journey-header">
+
+                    <h3>
+                        Master of Technology in Optical Engineering
+                        <br>
+                        <small>Indian Institute of Space Science and Technology</small>
+                    </h3>
+
+                    <span>2024 - 2026</span>
+
+                </div>
+
+                <div class="journey-scroll">
+
+                    <!-- MTECH -->
+
+                    <div class="flip-card">
+
+                        <div class="flip-card-inner">
+
+                            <div class="flip-card-front">
+
+                                <img class="flip-logo"
+                                    src="https://iist.ac.in/sites/default/files/2025-02/footer-logo.png">
+
+                                <h4>M.Tech Optical Engineering</h4>
+
+                                <span class="card-date">
+                                    August 2024 - July 2026
+                                </span>
+
+                                <div class="card-tags">
+
+                                    <span>Optics</span>
+                                    <span>Computer Vision</span>
+                                    <span>Metrology</span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="flip-card-back">
+
+                                <h4>Master of Technology</h4>
+
+                                <p>
+                                    Advanced study in Optical Engineering,
+                                    Optical Testing,
+                                    Computer Vision,
+                                    Imaging Systems,
+                                    Adaptive Optics,
+                                    and Optical Design.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- ISRO -->
+
+                    <div class="flip-card">
+
+                        <div class="flip-card-inner">
+
+                            <div class="flip-card-front">
+
+                                <img class="flip-logo"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Indian_Space_Research_Organisation_Logo.svg" style="background-color: white; width: 100%;">
+
+                                <h4>Project Trainee @ ISRO</h4>
+
+                                <span class="card-date">
+                                    Aug 2025 - April 2026
+                                </span>
+
+                                <div class="card-tags">
+
+                                    <span>Deflectometry</span>
+                                    <span>Profilometry</span>
+                                    <span>OpenCV</span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="flip-card-back">
+
+                                <h4>LEOS-ISRO</h4>
+
+                                <p>
+                                    Working on Infrared Deflectometry,
+                                    Optical Surface Profilometry,
+                                    Surface Reconstruction,
+                                    Accuracy Evaluation,
+                                    and Optical Mirror Characterization.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <h2>Featured Projects</h2>
+
+        <div class="journey-scroll">
+
+            <!-- ================================= -->
+            <!-- Infrared Deflectometry -->
+            <!-- ================================= -->
+
+            <div class="flip-card">
+
+                <div class="flip-card-inner">
+
+                    <div class="flip-card-front">
+
+                        <img class="flip-logo" src="https://cdn-icons-png.flaticon.com/512/2784/2784487.png">
+
+                        <h4>Infrared Deflectometry</h4>
+
+                        <span class="card-date">
+                            2025 - Present
+                        </span>
+
+                        <div class="card-tags">
+
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>NumPy</span>
+
+                        </div>
+
+                        <div class="card-tags">
+
+                            <span>Deflectometry</span>
+                            <span>Profilometry</span>
+                            <span>Surface Reconstruction</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="flip-card-back">
+
+                        <h4>Project Summary</h4>
+
+                        <p>
+
+                            Infrared Deflectometry based optical metrology
+                            system for reconstructing aspheric optical surfaces.
+
+                            Developed algorithms for image processing,
+                            surface reconstruction,
+                            accuracy evaluation,
+                            and optical mirror characterization.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ================================= -->
+            <!-- VSLAM -->
+            <!-- ================================= -->
+
+            <div class="flip-card">
+
+                <div class="flip-card-inner">
+
+                    <div class="flip-card-front">
+
+                        <img class="flip-logo" src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png">
+
+                        <h4>VSLAM Navigation</h4>
+
+                        <span class="card-date">
+                            Computer Vision Project
+                        </span>
+
+                        <div class="card-tags">
+
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>Streamlit</span>
+
+                        </div>
+
+                        <div class="card-tags">
+
+                            <span>ORB</span>
+                            <span>FLANN</span>
+                            <span>BoVW</span>
+                            <span>KITTI</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="flip-card-back">
+
+                        <h4>Project Summary</h4>
+
+                        <p>
+
+                            Visual navigation system using the KITTI dataset.
+
+                            Implemented feature extraction,
+                            Bag-of-Visual-Words,
+                            image retrieval,
+                            geometric verification,
+                            and trajectory visualization.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ================================= -->
+            <!-- Understanding Data -->
+            <!-- ================================= -->
+
+            <div class="flip-card">
+
+                <div class="flip-card-inner">
+
+                    <div class="flip-card-front">
+
+                        <img class="flip-logo" src="https://cdn-icons-png.flaticon.com/512/4149/4149684.png">
+
+                        <h4>Understanding Data</h4>
+
+                        <span class="card-date">
+                            Data Science Project
+                        </span>
+
+                        <div class="card-tags">
+
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>ML</span>
+
+                        </div>
+
+                        <div class="card-tags">
+
+                            <span>Analytics</span>
+                            <span>Visualization</span>
+                            <span>Statistics</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="flip-card-back">
+
+                        <h4>Project Summary</h4>
+
+                        <p>
+
+                            Data analysis platform supporting
+                            descriptive statistics,
+                            correlation analysis,
+                            VIF analysis,
+                            visualization,
+                            and machine learning workflows.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ================================= -->
+            <!-- GitHub -->
+            <!-- ================================= -->
+
+            <div class="flip-card">
+
+                <div class="flip-card-inner">
+
+                    <div class="flip-card-front">
+
+                        <img class="flip-logo" src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+
+                        <h4>View All Repositories</h4>
+
+                        <span class="card-date">
+
+                            GitHub Portfolio
+
+                        </span>
+
+                        <div class="card-tags">
+
+                            <span>AI</span>
+                            <span>ML</span>
+                            <span>Computer Vision</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="flip-card-back">
+
+                        <h4>GitHub</h4>
+
+                        <p>
+
+                            Explore all projects,
+                            experiments,
+                            research work,
+                            computer vision applications,
+                            machine learning projects,
+                            and portfolio repositories.
+
+                        </p>
+
+                        <br>
+
+                        <a href="https://github.com/VictoriousMango" target="_blank">
+
+                            Visit GitHub →
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="skills">
+
+        <h2>Skills</h2>
+
+        <!-- Technologies -->
+
+        <div class="skill-category">
+
+            <h3>Technologies</h3>
+
+            <div class="skill-badges">
+
+                <div class="skill-badge">
+                    <img
+                        src="https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/community/logos/python-logo-only.png">
+                    <span>Python</span>
+                </div>
+
+                <div class="skill-badge">
+                    <img src="https://cdn-icons-png.flaticon.com/128/4492/4492311.png">
+                    <span>SQL</span>
+                </div>
+
+                <div class="skill-badge">
+                    <img
+                        src="https://imgs.search.brave.com/rdD8MIx6SCwI2j_ZmcAQWJH3iyKa_GlVfmmsQw3fWEE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9ibG9n/LmNocmlzdGlhbnBl/cm9uZS5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMTgvMTAv/cHl0b3JjaC1sb2dv/LTMwMHgzMDAucG5n">
+                    <span>PyTorch</span>
+                </div>
+
+                <div class="skill-badge">
+                    <img
+                        src="https://imgs.search.brave.com/ghp9IKAvVzl3J1UDOBAxiNLRcM4FankG3aNUZYW4I_U/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pY29u/YXBlLmNvbS93cC1j/b250ZW50L2ZpbGVz/L2plLzM3MTI2NS9z/dmcvMzcxMjY1LnN2/Zw">
+                    <span>OpenCV</span>
+                </div>
+
+                <div class="skill-badge">
+                    <img src="https://cdn-icons-png.flaticon.com/128/8637/8637099.png">
+                    <span>Machine Learning</span>
+                </div>
+
+                <div class="skill-badge">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2103/2103832.png">
+                    <span>Deep Learning</span>
+                </div>
+
+                <div class="skill-badge">
+                    <img src="https://img.icons8.com/?size=96&id=U5n0qpPE377X&format=png">
+                    <span>Computer Vision</span>
+                </div>
+
+                <div class="skill-badge">
+                    <img src="https://img.icons8.com/?size=96&id=byau012HFa7I&format=png">
+                    <span>Generative AI</span>
+                </div>
+
+                <div class="skill-badge">
+                    <img
+                        src="https://imgs.search.brave.com/Y0YhnmFXnFBL4HP0GOuDIrUGxMkHW8e3MB3ZD_K0CLo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Vla2xvZ28u/Y29tL2xvZ28tcG5n/LzYxLzEvbGFuZ2No/YWluLWljb24tbG9n/by1wbmdfc2Vla2xv/Z28tNjExNjU1LnBu/Zw">
+                    <span>LangChain</span>
+                </div>
+
+                <div class="skill-badge">
+                    <img
+                        src="https://cdn.iconscout.com/icon/premium/png-512-thumb/non-parametric-statistical-analysis-icon-svg-download-png-11043832.png?f=webp&w=512">
+                    <span>RAG</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Tools -->
+
+        <div class="skill-category">
+
+            <h3>Tools</h3>
+
+            <div class="skill-badges">
+
+                <div class="skill-badge">
+                    <span>AWS</span>
+                </div>
+
+                <div class="skill-badge">
+                    <span>Docker</span>
+                </div>
+
+                <div class="skill-badge">
+                    <span>Git</span>
+                </div>
+
+                <div class="skill-badge">
+                    <span>Linux</span>
+                </div>
+
+                <div class="skill-badge">
+                    <span>MongoDB</span>
+                </div>
+
+                <div class="skill-badge">
+                    <span>DynamoDB</span>
+                </div>
+
+                <div class="skill-badge">
+                    <span>SQLite</span>
+                </div>
+
+                <div class="skill-badge">
+                    <span>Jupyter Notebook</span>
+                </div>
+
+                <div class="skill-badge">
+                    <span>Postman</span>
+                </div>
+
+                <div class="skill-badge">
+                    <span>VS Code</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Software -->
+
+        <div class="skill-category">
+
+            <h3>Software</h3>
+
+            <div class="skill-badges">
+
+                <div class="skill-badge">
+                    <span>Flask</span>
+                </div>
+
+                <div class="skill-badge">
+                    <span>FastAPI</span>
+                </div>
+
+                <div class="skill-badge">
+                    <span>REST APIs</span>
+                </div>
+
+                <div class="skill-badge">
+                    <span>Streamlit</span>
+                </div>
+
+                <div class="skill-badge">
+                    <span>HTML</span>
+                </div>
+
+                <div class="skill-badge">
+                    <span>CSS</span>
+                </div>
+
+                <div class="skill-badge">
+                    <span>NumPy</span>
+                </div>
+
+                <div class="skill-badge">
+                    <span>Pandas</span>
+                </div>
+
+                <div class="skill-badge">
+                    <span>Matplotlib</span>
+                </div>
+
+                <div class="skill-badge">
+                    <span>Seaborn</span>
+                </div>
+
+                <div class="skill-badge">
+                    <span>Zemax OpticStudio</span>
+                </div>
+
+                <div class="skill-badge">
+                    <span>Deflectometry</span>
+                </div>
+
+                <div class="skill-badge">
+                    <span>Surface Profilometry</span>
+                </div>
+
+                <div class="skill-badge">
+                    <span>Optical Testing</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="profiles">
+
+        <h2>Online Presence</h2>
+
+        <div class="profile-grid">
+
+            <!-- LinkedIN -->
+            <a href="https://www.linkedin.com/in/additya-akash-mishra/" target="_blank" class="profile-card-link">
+
+                <img
+                    src="https://delivery-p143253-e1476319.adobeaemcloud.com/adobe/assets/urn:aaid:aem:6c373362-1d10-46a1-bb4c-fcb492af6363/original/as/brandg-linkedinlogo-hero-logo-dsk-v01-2x.png" style="background-color: white; padding-left: 1%; padding-top: 1%;">
+                <div class="card-tags">
+                    <span>Professional Profile & Connections</span>
+                </div>
+
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/VictoriousMango" target="_blank" class="profile-card-link">
+
+                <img
+                    src="https://brand.github.com/_next/static/media/logo-03.cc5e5332.png">
+                    
+                <div class="card-tags">
+                    <span>Project Repositories</span>
+                    <span>Static Deployments</span>
+                </div>
+            </a>
+
+            <!-- LeetCode -->
+            <a href="https://leetcode.com/u/Additya_Akash_Mishra/" target="_blank" class="profile-card-link">
+
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/LeetCode_Logo_black_with_text.svg/500px-LeetCode_Logo_black_with_text.svg.png" style="background-color:white; padding: 1%;">
+
+                <div class="card-tags">
+                    <span>DSA</span>
+                    <span>Pandas</span>
+                    <span>Problem Solving</span>
+                    <span>Python</span>
+                </div>
                 
-                "MTech in <b>Optical Engineering</b>, studying Adaptive Optics, Optical System Design, and Lasers, while developing strong expertise in <b>Deep Learning and Computer Vision</b>."
-            ],
-            typeSpeed: 15,
-            loop: true,
-            backSpeed: 25,
-            backDelay: 5000
-        });
-        var typed = new Typed('#hero__skills', {
-            strings: ["Web Developer", "Python Developer", "Flask Developer", "Streamlit Developer", "Business Analyst", "ML Engineer", "Data Scientist"],
-            typeSpeed: 15,
-            loop: true,
-            backSpeed: 25,
-            backDelay: 2000
-        });
 
-        // Align the typed string to the left
-        document.getElementById('element').style.textAlign = 'left';
-        document.getElementById('element').style.width = 'inherit';
+            </a>
+
+            <!-- HackerRank -->
+            <a href="https://www.hackerrank.com/profile/Additya_" target="_blank" class="profile-card-link">
+
+                <img src="https://hrcdn.net/fcore/assets/brand/logo-new-white-green-a5cb16e0ae.svg">
+
+                <div class="card-tags">
+                    <span>Problem Solving</span>
+                    <span>Python</span>
+                    <span>SQL</span>
+                </div>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <script>
+        document.addEventListener('click', function (e) {
+            const card = e.target.closest('.flip-card');
+            if (card) { card.classList.toggle('flipped'); }
+        });
     </script>
 </body>
 
